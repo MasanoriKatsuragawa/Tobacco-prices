@@ -1,0 +1,2412 @@
+{
+  "pdfs": {
+    "7eccb981224a": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260827_kouriteikahenkou.pdf",
+      "etag": "\"9972-65a11d0d7a040\"",
+      "lastModified": "Fri, 28 Aug 2026 02:00:25 GMT",
+      "sha256": "61bd188a9893a81673e37ff30695f8e03a680cdfdd600bdb6da3e5f8621ee6e2",
+      "recordCount": 1,
+      "fetchedAt": "2026-09-04T16:24:36+09:00",
+      "parsedAt": "2026-09-04T16:24:36+09:00"
+    },
+    "c8fefc14fa46": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260827_kouriteika.pdf",
+      "etag": "\"81b1-65a11d0c85e00\"",
+      "lastModified": "Fri, 28 Aug 2026 02:00:24 GMT",
+      "sha256": "c5c8fd1ba0c88f9577f2f34a62ac4f79d824fd75b35b4b54b10e5320f0635915",
+      "recordCount": 2,
+      "fetchedAt": "2026-09-04T16:24:37+09:00",
+      "parsedAt": "2026-09-04T16:24:37+09:00"
+    },
+    "87fafbd111a3": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260826_kouriteikahenkou.pdf",
+      "etag": "\"bff9-659fdb32e0700\"",
+      "lastModified": "Thu, 27 Aug 2026 02:00:28 GMT",
+      "sha256": "faf8200a2bbebcc4f35eb11c66bcfe5c135377e62b83796ad240ada03e10681e",
+      "recordCount": 4,
+      "fetchedAt": "2026-09-04T16:24:39+09:00",
+      "parsedAt": "2026-09-04T16:24:39+09:00"
+    },
+    "597d434fad49": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260825_kouriteikahenkou.pdf",
+      "etag": "\"acb1-659e995c176c0\"",
+      "lastModified": "Wed, 26 Aug 2026 02:00:35 GMT",
+      "sha256": "1747f6dcf1fa28a45094a1a208f9e4b37536ba95a5e448377c2128a0cdd4145b",
+      "recordCount": 7,
+      "fetchedAt": "2026-09-04T16:24:47+09:00",
+      "parsedAt": "2026-09-04T16:24:47+09:00"
+    },
+    "a0a85daa9094": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260825_kouriteika.pdf",
+      "etag": "\"9544-659e995c176c0\"",
+      "lastModified": "Wed, 26 Aug 2026 02:00:35 GMT",
+      "sha256": "5dead287a457d1794ec5bf1ef55639a88dcd7cf33278432852f2d8202b828569",
+      "recordCount": 5,
+      "fetchedAt": "2026-09-04T16:24:48+09:00",
+      "parsedAt": "2026-09-04T16:24:48+09:00"
+    },
+    "00df3b58d015": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260821_kouriteikahenkou.pdf",
+      "etag": "\"9385-659c15a037480\"",
+      "lastModified": "Mon, 24 Aug 2026 02:00:34 GMT",
+      "sha256": "faf9f6fd772d866bf2811ecff4eb17bba8964cc8ef7d2a22d24d49bbc998df0b",
+      "recordCount": 1,
+      "fetchedAt": "2026-09-04T16:24:49+09:00",
+      "parsedAt": "2026-09-04T16:24:49+09:00"
+    },
+    "9e3843d12e57": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260821_kouriteika.pdf",
+      "etag": "\"a5b1-659c15a037480\"",
+      "lastModified": "Mon, 24 Aug 2026 02:00:34 GMT",
+      "sha256": "fa65262a38f17968c0a52f3d6f15600aff47b9c511725bbc1e9236d20720716b",
+      "recordCount": 7,
+      "fetchedAt": "2026-09-04T16:24:51+09:00",
+      "parsedAt": "2026-09-04T16:24:51+09:00"
+    },
+    "7c3e402f76a2": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260817_kouriteikahenkou.pdf",
+      "etag": "\"b79b-65948a66de040\"",
+      "lastModified": "Tue, 18 Aug 2026 02:00:25 GMT",
+      "sha256": "15fe534afb2e023804aa501648f8b3184d0347bec111818edf3bce89fcc6c972",
+      "recordCount": 4,
+      "fetchedAt": "2026-09-04T16:24:52+09:00",
+      "parsedAt": "2026-09-04T16:24:52+09:00"
+    },
+    "e848be85cd84": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260805_kouriteikahenkou.pdf",
+      "etag": "\"bbc6-658574036dbc0\"",
+      "lastModified": "Thu, 06 Aug 2026 02:00:23 GMT",
+      "sha256": "cc7e0a60132980f497e32d9e02d63dad99a236edacaea0db5d94ad66001edd4e",
+      "recordCount": 9,
+      "fetchedAt": "2026-09-04T16:24:54+09:00",
+      "parsedAt": "2026-09-04T16:24:54+09:00"
+    },
+    "967ed2cd12c1": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260730_kouriteika.pdf",
+      "etag": "\"9382-657de90258c40\"",
+      "lastModified": "Fri, 31 Jul 2026 02:01:13 GMT",
+      "sha256": "ba72104f8ca44170ae986a14f773083ee681715b5ac9a7ac254ae1bad8c2dfb5",
+      "recordCount": 9,
+      "fetchedAt": "2026-09-04T16:24:56+09:00",
+      "parsedAt": "2026-09-04T16:24:56+09:00"
+    },
+    "069dd2277291": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260729_kouriteika.pdf",
+      "etag": "\"c5fb-657ca6f9044c0\"",
+      "lastModified": "Thu, 30 Jul 2026 02:00:27 GMT",
+      "sha256": "162b5c9146ec8d924f462837c99be36b6b8bd1d1b1c26f49c65bb1f3fdd17ea8",
+      "recordCount": 18,
+      "fetchedAt": "2026-09-04T16:24:57+09:00",
+      "parsedAt": "2026-09-04T16:24:57+09:00"
+    },
+    "561d211b8cd0": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260728_kouriteikahenkou.pdf",
+      "etag": "\"acc1-657b651d76940\"",
+      "lastModified": "Wed, 29 Jul 2026 02:00:29 GMT",
+      "sha256": "c6cc199d798630e66388bb15207cce136b76895b43a717a56bc4d132bb49fd41",
+      "recordCount": 4,
+      "fetchedAt": "2026-09-04T16:25:01+09:00",
+      "parsedAt": "2026-09-04T16:25:01+09:00"
+    },
+    "c7ac52e23c0a": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260724_kouriteika.pdf",
+      "etag": "\"9ed3-6578e160a24c0\"",
+      "lastModified": "Mon, 27 Jul 2026 02:00:27 GMT",
+      "sha256": "a506e33d1e71197b2fe1b3ea8b4024846bdac7d92f9158440146de18196a10ed",
+      "recordCount": 3,
+      "fetchedAt": "2026-09-04T16:25:04+09:00",
+      "parsedAt": "2026-09-04T16:25:04+09:00"
+    },
+    "cd812f6e1469": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260722_kouriteika.pdf",
+      "etag": "\"a3e4-6573d9ee9adc0\"",
+      "lastModified": "Thu, 23 Jul 2026 02:00:31 GMT",
+      "sha256": "ee2a83117bd677aeecd9800a670a833c77191213dc1a05187e1b93984b3f3560",
+      "recordCount": 18,
+      "fetchedAt": "2026-09-04T16:25:05+09:00",
+      "parsedAt": "2026-09-04T16:25:05+09:00"
+    },
+    "7a95d2d67eb1": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260714_kouriteika.pdf",
+      "etag": "\"8d1c-6569cb000e700\"",
+      "lastModified": "Wed, 15 Jul 2026 02:00:28 GMT",
+      "sha256": "5c4a19372bc59a9d23e0504215fbf5d99203f678ac5bbb6d3c7aae530fbecd2d",
+      "recordCount": 7,
+      "fetchedAt": "2026-09-04T16:25:13+09:00",
+      "parsedAt": "2026-09-04T16:25:13+09:00"
+    },
+    "f47ebb52caf1": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260630_kouriteika.pdf",
+      "etag": "\"46e9-655830ded5bc0\"",
+      "lastModified": "Wed, 01 Jul 2026 02:00:23 GMT",
+      "sha256": "29a5e45f7ad585899cf63ab0354e39def533968db93090dc213f5de95e0330fc",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:25:17+09:00",
+      "parsedAt": "2026-09-04T16:25:17+09:00"
+    },
+    "b2ec278d7cf6": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260629_kouriteikahenkou.pdf",
+      "etag": "\"e181-6556ef1dfbf40\"",
+      "lastModified": "Tue, 30 Jun 2026 02:00:53 GMT",
+      "sha256": "31a13b467e87afeb6c28b1e3a72e4a425a5fabb5556291306beeac7458cf3c81",
+      "recordCount": 208,
+      "fetchedAt": "2026-09-04T16:25:18+09:00",
+      "parsedAt": "2026-09-04T16:25:18+09:00"
+    },
+    "cbe532b8fe9c": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260626_kouriteikahenkou.pdf",
+      "etag": "\"5837-6555ad3acd1c0\"",
+      "lastModified": "Mon, 29 Jun 2026 02:00:47 GMT",
+      "sha256": "a31f081960e911227e7440b06b0eae3c86dba5c8707ae9ce048d29c5aa0d9d74",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:25:19+09:00",
+      "parsedAt": "2026-09-04T16:25:19+09:00"
+    },
+    "a92c5cd99415": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260626_kouriteika.pdf",
+      "etag": "\"42b9-6555ad28ae700\"",
+      "lastModified": "Mon, 29 Jun 2026 02:00:28 GMT",
+      "sha256": "8cb60286c53d057b3dc2a15df623cd2d45b0d2f8cf93ac898ee6bae39bc92152",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:25:21+09:00",
+      "parsedAt": "2026-09-04T16:25:21+09:00"
+    },
+    "23562748ce60": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260624_kouriteika.pdf",
+      "etag": "\"b283-6550a5affa040\"",
+      "lastModified": "Thu, 25 Jun 2026 02:00:25 GMT",
+      "sha256": "db0963df626ad4b7191106d0caf170ac2ac2bfb790ca800089e18a08ad78072d",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:25:23+09:00",
+      "parsedAt": "2026-09-04T16:25:23+09:00"
+    },
+    "cc826c799926": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260619_kouriteika.pdf",
+      "etag": "\"92db-654ce01e45000\"",
+      "lastModified": "Mon, 22 Jun 2026 02:00:32 GMT",
+      "sha256": "d4cdc3d56d3b3835021a57bf1a377b17237dc63a9444519d8e28f4935eabbd01",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:25:24+09:00",
+      "parsedAt": "2026-09-04T16:25:24+09:00"
+    },
+    "034d77091472": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260618_kouriteika.pdf",
+      "etag": "\"a05c-65491a7f36040\"",
+      "lastModified": "Fri, 19 Jun 2026 02:00:25 GMT",
+      "sha256": "1db19bce3c1c8e8a756408b80cbfc631c239ba143e1a2910e74cfd911e1d0a3e",
+      "recordCount": 1,
+      "fetchedAt": "2026-09-04T16:25:26+09:00",
+      "parsedAt": "2026-09-04T16:25:26+09:00"
+    },
+    "ddfacd7aad59": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260615_kouriteika.pdf",
+      "etag": "\"9786-654554e6d4040\"",
+      "lastModified": "Tue, 16 Jun 2026 02:00:25 GMT",
+      "sha256": "15e802c45c798a2416afe600ae059dcef41a8932b776a49b270ab04032a05cd8",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:25:27+09:00",
+      "parsedAt": "2026-09-04T16:25:27+09:00"
+    },
+    "14b5aa00594e": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/202606011_kouriteikahenkou.pdf",
+      "etag": "\"a465-65404d74cc940\"",
+      "lastModified": "Fri, 12 Jun 2026 02:00:29 GMT",
+      "sha256": "4fe47e2e0c61239db1dd0b5d5094840de0d9de761a4169155ea2c37ed4709d11",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:25:28+09:00",
+      "parsedAt": "2026-09-04T16:25:28+09:00"
+    },
+    "11d79039bb38": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260609_kouriteika.pdf",
+      "etag": "\"8af9-653dc9b14b500\"",
+      "lastModified": "Wed, 10 Jun 2026 02:00:20 GMT",
+      "sha256": "187c416e54c1926bebfca816105b0c156306415e4a94fce8a094ba91d50e0bfc",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:25:30+09:00",
+      "parsedAt": "2026-09-04T16:25:30+09:00"
+    },
+    "8905b72cd246": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260601_kouriteikahenkou.pdf",
+      "etag": "\"b3bf-6533bac68f740\"",
+      "lastModified": "Tue, 02 Jun 2026 02:00:21 GMT",
+      "sha256": "ee2b82ef60cb0ffa5f2df7691f276ae7bd72993ac3d68dba6decf7dfffe1846e",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:25:32+09:00",
+      "parsedAt": "2026-09-04T16:25:32+09:00"
+    },
+    "80ce4f2796aa": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260529_kouriteikahenkou.pdf",
+      "etag": "\"c962-653278ebf5e00\"",
+      "lastModified": "Mon, 01 Jun 2026 02:00:24 GMT",
+      "sha256": "0dbb59a19fcf85fe9c97a28073428ad47a7755896c3c8f96a5b8d68606e04b27",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:25:33+09:00",
+      "parsedAt": "2026-09-04T16:25:33+09:00"
+    },
+    "db7a3134f27f": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260529_kouriteika.pdf",
+      "etag": "\"8c19-653278ebf5e00\"",
+      "lastModified": "Mon, 01 Jun 2026 02:00:24 GMT",
+      "sha256": "8bdb2194f7a3eca4d0611fd7ab167b410bff42fc438397cd499785920963262a",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:25:34+09:00",
+      "parsedAt": "2026-09-04T16:25:34+09:00"
+    },
+    "199c6c1b7a91": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260525_kouriteika.pdf",
+      "etag": "\"8739-652aedbd1a280\"",
+      "lastModified": "Tue, 26 May 2026 02:00:26 GMT",
+      "sha256": "4b7b88ad9e772bc7ff9b9bd2a61607d80e02b6787f2b70caf91c897f0355f7ff",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:25:36+09:00",
+      "parsedAt": "2026-09-04T16:25:36+09:00"
+    },
+    "66e777a62b74": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260520_kouriteikahenkou.pdf",
+      "etag": "\"99e9-6524a468d8040\"",
+      "lastModified": "Thu, 21 May 2026 02:00:25 GMT",
+      "sha256": "a6c3dd574b70e1bd977ec60e9e3ba54d285db047351beb3387184abfa89940e6",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:25:40+09:00",
+      "parsedAt": "2026-09-04T16:25:40+09:00"
+    },
+    "1ec27f7d6b26": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260520_kouriteika.pdf",
+      "etag": "\"9cba-6524a467e3e00\"",
+      "lastModified": "Thu, 21 May 2026 02:00:24 GMT",
+      "sha256": "ce55a1e3c9d6af7d8fe7f617f9d00249ad4cfa70573c2daf3de3b9c396513d43",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:25:41+09:00",
+      "parsedAt": "2026-09-04T16:25:41+09:00"
+    },
+    "9d82042e826e": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260518_kouriteikahenkou.pdf",
+      "etag": "\"9397-652220b0c8700\"",
+      "lastModified": "Tue, 19 May 2026 02:00:28 GMT",
+      "sha256": "7260bf9d40c48f18cb21ac9c7f08137c2fcbe6987a182db93bc61f94829b0751",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:25:43+09:00",
+      "parsedAt": "2026-09-04T16:25:43+09:00"
+    },
+    "d9f62c780df6": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260518_kouriteika.pdf",
+      "etag": "\"8739-652220b0c8700\"",
+      "lastModified": "Tue, 19 May 2026 02:00:28 GMT",
+      "sha256": "11beb4d214ab91288644f533a8823c062b20c8354a11222163d63b1b55623889",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:25:44+09:00",
+      "parsedAt": "2026-09-04T16:25:44+09:00"
+    },
+    "44708bc04499": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260507_kouriteika.pdf",
+      "etag": "\"8b1f-65144c2bc24c0\"",
+      "lastModified": "Fri, 08 May 2026 02:00:27 GMT",
+      "sha256": "29372e9d86fc4d0f927f30e8e6b7c8456a35c20902b97c1cea6dd0444561b8f2",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:25:46+09:00",
+      "parsedAt": "2026-09-04T16:25:46+09:00"
+    },
+    "c6a33aa3eae8": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260430_kouriteika.pdf",
+      "etag": "\"8b3f-650b7f1e7c700\"",
+      "lastModified": "Fri, 01 May 2026 02:00:28 GMT",
+      "sha256": "4334880b6efb6d56a21e69b3e460628031c039d4236c02fadf2077ea3c22959a",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:25:47+09:00",
+      "parsedAt": "2026-09-04T16:25:47+09:00"
+    },
+    "8068241a4558": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260427_kouriteikahenkou.pdf",
+      "etag": "\"f5b7-6507b98adf240\"",
+      "lastModified": "Tue, 28 Apr 2026 02:00:33 GMT",
+      "sha256": "bc850791db45e0dbaf28eea742af7927000752e89d0b14ca2e7c706a3fff03ed",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:25:49+09:00",
+      "parsedAt": "2026-09-04T16:25:49+09:00"
+    },
+    "01cb63e0baca": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260427_kouriteika.pdf",
+      "etag": "\"9db7-654ce01e45000\"",
+      "lastModified": "Mon, 22 Jun 2026 02:00:32 GMT",
+      "sha256": "d2f48cea78b7a96705f70fd4220181de6d4bc37072a7852da0521930a6550775",
+      "recordCount": 8,
+      "fetchedAt": "2026-09-04T16:25:51+09:00",
+      "parsedAt": "2026-09-04T16:25:51+09:00"
+    },
+    "82abf7674452": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260417_kouriteika.pdf",
+      "etag": "\"aa63-6502ec12456e6\"",
+      "lastModified": "Fri, 24 Apr 2026 06:19:59 GMT",
+      "sha256": "fc29a7649f0b8c0b15db6dbd6af1a15afeacdf734f86798e0043ea1036362116",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:25:54+09:00",
+      "parsedAt": "2026-09-04T16:25:54+09:00"
+    },
+    "2b0403da412e": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260415_kouriteika.pdf",
+      "etag": "\"8dd0-64f8a32492700\"",
+      "lastModified": "Thu, 16 Apr 2026 02:00:28 GMT",
+      "sha256": "454c8964f99664831c5ef92edb79445b1ba283eedc908299b8b44ee39f167702",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:25:55+09:00",
+      "parsedAt": "2026-09-04T16:25:55+09:00"
+    },
+    "e95f0eb6057f": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260410_kouriteikahenkou.pdf",
+      "etag": "\"93ff-64f4dd8677980\"",
+      "lastModified": "Mon, 13 Apr 2026 02:00:22 GMT",
+      "sha256": "fe72eb5982cdedf57fa86882a03a56ed1325ad1d5896e4d263e36beaab168928",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:25:57+09:00",
+      "parsedAt": "2026-09-04T16:25:57+09:00"
+    },
+    "02f593946f41": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260410_kouriteika.pdf",
+      "etag": "\"8e20-64f4dd8677980\"",
+      "lastModified": "Mon, 13 Apr 2026 02:00:22 GMT",
+      "sha256": "626a1720a2c6704963e2efd4ab9c0bf724506db7f29d75b92d07e772ef310702",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:25:58+09:00",
+      "parsedAt": "2026-09-04T16:25:58+09:00"
+    },
+    "014dcf668ff9": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260408_kouriteika.pdf",
+      "etag": "\"8680-64efd61470280\"",
+      "lastModified": "Thu, 09 Apr 2026 02:00:26 GMT",
+      "sha256": "5bda65d5a3717ff37e38bcc2d1d0b76b31bd4450146600ef7efd313d40cdc88b",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:26:00+09:00",
+      "parsedAt": "2026-09-04T16:26:00+09:00"
+    },
+    "a203333c02a1": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260330_kouriteikahenkou.pdf",
+      "etag": "\"9da2-64e485500edc0\"",
+      "lastModified": "Tue, 31 Mar 2026 02:00:31 GMT",
+      "sha256": "56c00153a586c1c62414203336e4e8924642d6d433ccf287af6d9bd46219343a",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:26:01+09:00",
+      "parsedAt": "2026-09-04T16:26:01+09:00"
+    },
+    "787898d62ce7": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260330_kouriteika.pdf",
+      "etag": "\"a36f-64e485500edc0\"",
+      "lastModified": "Tue, 31 Mar 2026 02:00:31 GMT",
+      "sha256": "9e754fb27624d8d7dde282e4d77b2b48bbeb960bd192a58786774e0da03483c9",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:26:03+09:00",
+      "parsedAt": "2026-09-04T16:26:03+09:00"
+    },
+    "f4efde22ef2e": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260324_kouriteikahenkou.pdf",
+      "etag": "\"9731-64dcfa1d62940\"",
+      "lastModified": "Wed, 25 Mar 2026 02:00:29 GMT",
+      "sha256": "726a59ea73ceabaf50f2fcaba9ba82e364a356e5b851ddaa834dab09644bc6cd",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:26:05+09:00",
+      "parsedAt": "2026-09-04T16:26:05+09:00"
+    },
+    "2b907671808c": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260324_kouriteika.pdf",
+      "etag": "\"878f-64dcfa1d62940\"",
+      "lastModified": "Wed, 25 Mar 2026 02:00:29 GMT",
+      "sha256": "f0fe44e2fa8156cd58e73f24e09975cdd73eb5f4cc00b354055101f327a898e8",
+      "recordCount": 1,
+      "fetchedAt": "2026-09-04T16:26:06+09:00",
+      "parsedAt": "2026-09-04T16:26:06+09:00"
+    },
+    "542ca1f7fb16": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260319_kouriteikahenkou.pdf",
+      "etag": "\"a433-64da7658ed2c0\"",
+      "lastModified": "Mon, 23 Mar 2026 02:00:19 GMT",
+      "sha256": "79d58549d52579d38276cd4d3278a44b35346039948febb322bfa163a0d856d6",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:26:07+09:00",
+      "parsedAt": "2026-09-04T16:26:07+09:00"
+    },
+    "7626c47be245": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260319_kouriteika.pdf",
+      "etag": "\"8f9f-64da7657f9080\"",
+      "lastModified": "Mon, 23 Mar 2026 02:00:18 GMT",
+      "sha256": "3be8e159830893bf320d3aefd83f30a42a748fa23c3a253577d6e1cff745655d",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:26:09+09:00",
+      "parsedAt": "2026-09-04T16:26:09+09:00"
+    },
+    "26b1b4ed2793": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260318_kouriteika.pdf",
+      "etag": "\"8890-64d56eed92b80\"",
+      "lastModified": "Thu, 19 Mar 2026 02:00:30 GMT",
+      "sha256": "e4e6da0138cbc7af6614a5f538a47b7a73716db46da1e6ace463de87dda92766",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:26:10+09:00",
+      "parsedAt": "2026-09-04T16:26:10+09:00"
+    },
+    "bd55ac915049": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260313_kouriteika.pdf",
+      "etag": "\"9edf-64d1a95530b80\"",
+      "lastModified": "Mon, 16 Mar 2026 02:00:30 GMT",
+      "sha256": "7b1c2abaef176a8327a83bb4ed263c38d9cbfe87d4cbdc64a703136a9b419783",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:26:12+09:00",
+      "parsedAt": "2026-09-04T16:26:12+09:00"
+    },
+    "f4d730a9ae63": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260306_kouriteikahenkou.pdf",
+      "etag": "\"d0c1-64c8dc413de00\"",
+      "lastModified": "Mon, 09 Mar 2026 02:00:24 GMT",
+      "sha256": "7133caed41f6a2521307435f4b9e67c25ce209198053cd5cc9237782f0bbd1d3",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:26:13+09:00",
+      "parsedAt": "2026-09-04T16:26:13+09:00"
+    },
+    "3a52a1cd636f": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260302_kouriteika.pdf",
+      "etag": "\"afa4-64c1511cdfb40\"",
+      "lastModified": "Tue, 03 Mar 2026 02:00:37 GMT",
+      "sha256": "d74ebb63ec3d828eda09acb5fe6fceba847676dc331f823b1fb55ac2abf2c77d",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:26:15+09:00",
+      "parsedAt": "2026-09-04T16:26:15+09:00"
+    },
+    "96cabe8c68cf": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260227_kouriteikahenkou.pdf",
+      "etag": "\"9761-64c00f39b0dc0\"",
+      "lastModified": "Mon, 02 Mar 2026 02:00:31 GMT",
+      "sha256": "2c3126788b478920fba304f97832a4e5fc4459fc8f00478a776ce2cd375d5143",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:26:17+09:00",
+      "parsedAt": "2026-09-04T16:26:17+09:00"
+    },
+    "c7a5c03d5de3": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260226_kouriteikahenkou.pdf",
+      "etag": "\"b17a-64bc49a337240\"",
+      "lastModified": "Fri, 27 Feb 2026 02:00:33 GMT",
+      "sha256": "2a5de37a071d0a4125e15cb604a610d969606b218150186f7cbc33360f59101f",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:26:18+09:00",
+      "parsedAt": "2026-09-04T16:26:18+09:00"
+    },
+    "7371211e7acb": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260226_kouriteika.pdf",
+      "etag": "\"ab34-64bc49a243000\"",
+      "lastModified": "Fri, 27 Feb 2026 02:00:32 GMT",
+      "sha256": "e1284a0150cc88f619525694ba397cd680273cb33bf05f17e29b61254bf97c0c",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:26:19+09:00",
+      "parsedAt": "2026-09-04T16:26:19+09:00"
+    },
+    "130b9166d8f3": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260220_kouriteikahenkou.pdf",
+      "etag": "\"969f-64b884051c4c0\"",
+      "lastModified": "Tue, 24 Feb 2026 02:00:27 GMT",
+      "sha256": "182da3a05335aac0ae883f4fe086518ab77b653a877c6e6a84fde7fd3ade9868",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:26:21+09:00",
+      "parsedAt": "2026-09-04T16:26:21+09:00"
+    },
+    "d1ff2c1eb804": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260220_kouriteika.pdf",
+      "etag": "\"9040-64b884051c4c0\"",
+      "lastModified": "Tue, 24 Feb 2026 02:00:27 GMT",
+      "sha256": "76b4e41a17529dac629f031e457a7bb9a74516386b670b4be5f4d9fb3a9b683f",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:26:22+09:00",
+      "parsedAt": "2026-09-04T16:26:22+09:00"
+    },
+    "02151b02ba4e": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260216_kouriteikahenkou.pdf",
+      "etag": "\"bc14-64afb6f6e24c0\"",
+      "lastModified": "Tue, 17 Feb 2026 02:00:27 GMT",
+      "sha256": "8f941526a4f34b62b096e9226956178c336d11a5a87d6f7c2de991b9768890ee",
+      "recordCount": 66,
+      "fetchedAt": "2026-09-04T16:26:26+09:00",
+      "parsedAt": "2026-09-04T16:26:26+09:00"
+    },
+    "bbea27c14131": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260204_kouriteika.pdf",
+      "etag": "\"94df-64a0a0a2b4440\"",
+      "lastModified": "Thu, 05 Feb 2026 02:00:41 GMT",
+      "sha256": "3427e280d25312469f1b7bc5297de43fa3e16873f59c46a7486e57d57543490f",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:26:27+09:00",
+      "parsedAt": "2026-09-04T16:26:27+09:00"
+    },
+    "91d7c40016de": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260126_kouriteikahenkou.pdf",
+      "etag": "\"c47b-64954fcd28700\"",
+      "lastModified": "Tue, 27 Jan 2026 02:00:28 GMT",
+      "sha256": "31f1caa160fffe98edea1b2e6cc865dee69df317a6aae8e07899dfa3b9cbe718",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:26:29+09:00",
+      "parsedAt": "2026-09-04T16:26:29+09:00"
+    },
+    "1c80fe0a3344": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260119_kouriteika.pdf",
+      "etag": "\"951f-648c82b841740\"",
+      "lastModified": "Tue, 20 Jan 2026 02:00:21 GMT",
+      "sha256": "f65ffbfc5b85a2f2d3800ff603ba285de44b2077f9569bead2d8645839641e7b",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:26:30+09:00",
+      "parsedAt": "2026-09-04T16:26:30+09:00"
+    },
+    "6b5379a0e25c": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260115_kouriteika.pdf",
+      "etag": "\"aa2f-64877b4545e00\"",
+      "lastModified": "Fri, 16 Jan 2026 02:00:24 GMT",
+      "sha256": "bb62109b392dca68925aeb7e1b0ed018e51d468d421128dced84ffe99e862362",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:26:32+09:00",
+      "parsedAt": "2026-09-04T16:26:32+09:00"
+    },
+    "fe073e4bc45e": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260113_kouriteika.pdf",
+      "etag": "\"8bb2-6484f78f1e940\"",
+      "lastModified": "Wed, 14 Jan 2026 02:00:29 GMT",
+      "sha256": "5749307039004166264e7b4b241d5ad5abcb1ab0d43a917774f9d25d2d705e0d",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:26:34+09:00",
+      "parsedAt": "2026-09-04T16:26:34+09:00"
+    },
+    "a7e427dd29ef": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20251224_kouriteika.pdf",
+      "etag": "\"8d80-646bd242dab80\"",
+      "lastModified": "Thu, 25 Dec 2025 02:00:30 GMT",
+      "sha256": "8c86d4429c9f673dddbb8ee997e03b004ef99eb5e9ee7edc05053726c98548ae",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:26:35+09:00",
+      "parsedAt": "2026-09-04T16:26:35+09:00"
+    },
+    "ff46ad04e9cb": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20251223_kouriteika.pdf",
+      "etag": "\"8d00-646a906470940\"",
+      "lastModified": "Wed, 24 Dec 2025 02:00:29 GMT",
+      "sha256": "c9c4c612b71243fe17d3e1665d44c6c03cd96347233b9164b44075980815c0c4",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:26:36+09:00",
+      "parsedAt": "2026-09-04T16:26:36+09:00"
+    },
+    "2fd9677568b5": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20251216_kouriteika.pdf",
+      "etag": "\"9402-6461c35afb480\"",
+      "lastModified": "Wed, 17 Dec 2025 02:00:34 GMT",
+      "sha256": "292d7ef48a63349582cccc8f3ed4f32cc3aa4b241323cb1b99dce1160dda10c3",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:26:38+09:00",
+      "parsedAt": "2026-09-04T16:26:38+09:00"
+    },
+    "01f9ad61b5a8": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20251215_kouriteika.pdf",
+      "etag": "\"c108-6464bc92f6406\"",
+      "lastModified": "Fri, 19 Dec 2025 10:46:12 GMT",
+      "sha256": "51701c95f6de87589bb44c01362c72c1c4691f3a727c14e6ac6afc939254a119",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:26:39+09:00",
+      "parsedAt": "2026-09-04T16:26:39+09:00"
+    },
+    "9d9557bc2d31": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20251205_kouriteika.pdf",
+      "etag": "\"b282-6456728757bc0\"",
+      "lastModified": "Mon, 08 Dec 2025 02:00:23 GMT",
+      "sha256": "93a38c8e37ecfdc15659bb73cd85ccde7976901aff71f6cc1d9e9519169d06f6",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:26:41+09:00",
+      "parsedAt": "2026-09-04T16:26:41+09:00"
+    },
+    "f4f2bdd937e0": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20251203_kouriteika.pdf",
+      "etag": "\"bbc9-64516b145c280\"",
+      "lastModified": "Thu, 04 Dec 2025 02:00:26 GMT",
+      "sha256": "01a107d6a090cd131c1756bda75c20913d223c11fba6319520aeeaa8b2672ac5",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:26:43+09:00",
+      "parsedAt": "2026-09-04T16:26:43+09:00"
+    },
+    "31d4007e66f8": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20251202_kouriteika.pdf",
+      "etag": "\"b442-6450293409bc0\"",
+      "lastModified": "Wed, 03 Dec 2025 02:00:23 GMT",
+      "sha256": "a24a920a28c1afa2e2a0e7426acda967ea4b8cd00feb66c182819a2d17f3e04e",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:26:44+09:00",
+      "parsedAt": "2026-09-04T16:26:44+09:00"
+    },
+    "f24b498a3122": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20251127_kouriteika.pdf",
+      "etag": "\"92e2-6449dfe580700\"",
+      "lastModified": "Fri, 28 Nov 2025 02:00:28 GMT",
+      "sha256": "00a79e2f041411b6596e5235cfccd013366ce042266ce4d49e5f71e93d5d2ad9",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:26:46+09:00",
+      "parsedAt": "2026-09-04T16:26:46+09:00"
+    },
+    "37ca551f4c92": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20251117_kouriteika.pdf",
+      "etag": "\"8630-643d4d3ee4700\"",
+      "lastModified": "Tue, 18 Nov 2025 02:00:28 GMT",
+      "sha256": "554bb14c62099a08a4c99980dbffc8d99b3331d2199db9a87965a0792b650015",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:26:47+09:00",
+      "parsedAt": "2026-09-04T16:26:47+09:00"
+    },
+    "bc3e3e532312": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20251110_kouriteika.pdf",
+      "etag": "\"8c9f-6434802ec2280\"",
+      "lastModified": "Tue, 11 Nov 2025 02:00:26 GMT",
+      "sha256": "3e9375c8685547a1d884206ed7e01ba784fb3b92200f1a374ae84ce322429fe2",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:26:48+09:00",
+      "parsedAt": "2026-09-04T16:26:48+09:00"
+    },
+    "6f6f146a150b": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20251107_kouriteika.pdf",
+      "etag": "\"8ff0-64333e4f63e00\"",
+      "lastModified": "Mon, 10 Nov 2025 02:00:24 GMT",
+      "sha256": "25fac6d3867df06636f571626e49295cfb1ef3928716565d5f29ef97a13c892a",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:26:50+09:00",
+      "parsedAt": "2026-09-04T16:26:50+09:00"
+    },
+    "b29d8d3b16a7": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20251105_kouriteikahenkou.pdf",
+      "etag": "\"cb89-642e36d98be00\"",
+      "lastModified": "Thu, 06 Nov 2025 02:00:24 GMT",
+      "sha256": "def0cfe24a99620421bfd016bd9dc2b210d0f12883460f30662ee91fe01be77b",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:26:51+09:00",
+      "parsedAt": "2026-09-04T16:26:51+09:00"
+    },
+    "d4fc8ffc1158": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20251105_kouriteika.pdf",
+      "etag": "\"a0aa-642e36d98be00\"",
+      "lastModified": "Thu, 06 Nov 2025 02:00:24 GMT",
+      "sha256": "f48e44c538a246992def3ecda2b740845bae741a00cccb34d16cf3feb74b952e",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:26:53+09:00",
+      "parsedAt": "2026-09-04T16:26:53+09:00"
+    },
+    "1ec5d8f41510": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20251024_kouriteika.pdf",
+      "etag": "\"91c0-6421a432efe00\"",
+      "lastModified": "Mon, 27 Oct 2025 02:00:24 GMT",
+      "sha256": "a087a9c9d63fbeee94c840b6dbcaba8f40ccf0eecc057796bf15a779eb2a0423",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:26:54+09:00",
+      "parsedAt": "2026-09-04T16:26:54+09:00"
+    },
+    "e4f11e5faae9": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20251022_kouriteika.pdf",
+      "etag": "\"8c70-641c9cc5ad240\"",
+      "lastModified": "Thu, 23 Oct 2025 02:00:33 GMT",
+      "sha256": "6e2b3767030119cfe57b29a922a799d8f6e94346c02c4a8d7d7c2118a965d5ab",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:26:56+09:00",
+      "parsedAt": "2026-09-04T16:26:56+09:00"
+    },
+    "48803b35ceeb": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20251020_kouriteika.pdf",
+      "etag": "\"9b1f-641a190ca96c0\"",
+      "lastModified": "Tue, 21 Oct 2025 02:00:35 GMT",
+      "sha256": "f58e8631823ab8d81ba18ee3954c1bcd40189534d124b6aeca6379068ddcf053",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:26:57+09:00",
+      "parsedAt": "2026-09-04T16:26:57+09:00"
+    },
+    "3e26c1ca01a1": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20251017_kouriteikahenkou.pdf",
+      "etag": "\"d5e5-6418d727924c0\"",
+      "lastModified": "Mon, 20 Oct 2025 02:00:27 GMT",
+      "sha256": "c0477ee44bf4c575f9066841766be34b157b3150dbd8fc08ac64e0897c25857c",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:26:59+09:00",
+      "parsedAt": "2026-09-04T16:26:59+09:00"
+    },
+    "71fac46100c8": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20251010_kouriteika.pdf",
+      "etag": "\"8ab1-64114bf021500\"",
+      "lastModified": "Tue, 14 Oct 2025 02:00:20 GMT",
+      "sha256": "db8ba7e71c45b5e158044c75772fd92b2bc7928034116aad474289844da24967",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:27:00+09:00",
+      "parsedAt": "2026-09-04T16:27:00+09:00"
+    },
+    "bf4d82d310f6": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20251010_kouriteikahenkou.pdf",
+      "etag": "\"9533-64114bf021500\"",
+      "lastModified": "Tue, 14 Oct 2025 02:00:20 GMT",
+      "sha256": "1a19cb616d4c37f4e888740cfc8f2a53e5332d253c92c4aa2f0443e7e258ce0c",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:27:02+09:00",
+      "parsedAt": "2026-09-04T16:27:02+09:00"
+    },
+    "156e0fc99bff": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20251008_kouriteika.pdf",
+      "etag": "\"ad34-640b02a198040\"",
+      "lastModified": "Thu, 09 Oct 2025 02:00:25 GMT",
+      "sha256": "ca56cb38f3e7205ce446f6791bbd8f68023dab3851da295a0d36cd11baf114d7",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:27:03+09:00",
+      "parsedAt": "2026-09-04T16:27:03+09:00"
+    },
+    "e65dbcb84d67": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20251006_kouriteikahenkou.pdf",
+      "etag": "\"97df-64087eea7c940\"",
+      "lastModified": "Tue, 07 Oct 2025 02:00:29 GMT",
+      "sha256": "8751486e420de964324bdf271fa766f330ffc50b28ddd32c28750adbe8d5ee8e",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:27:05+09:00",
+      "parsedAt": "2026-09-04T16:27:05+09:00"
+    },
+    "07c8c305e8e0": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20250930_kouriteika.pdf",
+      "etag": "\"8e01-6400f3b8c4700\"",
+      "lastModified": "Wed, 01 Oct 2025 02:00:28 GMT",
+      "sha256": "87b37b78e0e4e3b088bd2e77435b8965a629a6f371430ce2192f92ae72543c4f",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:27:06+09:00",
+      "parsedAt": "2026-09-04T16:27:06+09:00"
+    },
+    "5316c7b4aac4": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20250929_kouriteika.pdf",
+      "etag": "\"889f-63ffb1d4a1740\"",
+      "lastModified": "Tue, 30 Sep 2025 02:00:21 GMT",
+      "sha256": "891d4934957d0711864b3c2571f56a5c47d03c515388c96105d2449942c7a595",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:27:08+09:00",
+      "parsedAt": "2026-09-04T16:27:08+09:00"
+    },
+    "4cdf88e8f88e": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20250925_kouriteika.pdf",
+      "etag": "\"b1fc-63faaa64824c0\"",
+      "lastModified": "Fri, 26 Sep 2025 02:00:27 GMT",
+      "sha256": "c6121ab03144b7d3d7b7035cf05d1328fe43f149a9148f4e81f72a4a45d14ac7",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:27:09+09:00",
+      "parsedAt": "2026-09-04T16:27:09+09:00"
+    },
+    "0e8093d20524": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20250912_kouriteika.pdf",
+      "etag": "\"8d80-63ee17c39f240\"",
+      "lastModified": "Tue, 16 Sep 2025 02:00:33 GMT",
+      "sha256": "28934f59d60cb2971a321201919c4c67753dbfa526516dfcf58d29f651f95827",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:27:11+09:00",
+      "parsedAt": "2026-09-04T16:27:11+09:00"
+    },
+    "54026ba3e447": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20250910_kouriteika.pdf",
+      "etag": "\"8801-63e7ce6203080\"",
+      "lastModified": "Thu, 11 Sep 2025 02:00:18 GMT",
+      "sha256": "d4c3b388def7a58f92addf883ac385d6526355fbdd7eca28b6b740c39229fca9",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:27:13+09:00",
+      "parsedAt": "2026-09-04T16:27:13+09:00"
+    },
+    "c2f3724ba2d5": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20250829_kouriteika.pdf",
+      "etag": "\"947d-63db3bb88a9c0\"",
+      "lastModified": "Mon, 01 Sep 2025 02:00:15 GMT",
+      "sha256": "84d0a7fb219029de3a3d26c0bd4eb7c8e8e1a7a8afd91b4f1b9cfb4ad26955d9",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:27:14+09:00",
+      "parsedAt": "2026-09-04T16:27:14+09:00"
+    },
+    "5c7769ec31e1": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20250829_kouriteikahenkou.pdf",
+      "etag": "\"9c23-63db3bb97ec00\"",
+      "lastModified": "Mon, 01 Sep 2025 02:00:16 GMT",
+      "sha256": "5575c526e3e9fa2d2a75e142f0113afb39c27c3d66ea1506331b43933ab9aeb3",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:27:15+09:00",
+      "parsedAt": "2026-09-04T16:27:15+09:00"
+    },
+    "8c50d01608d7": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20250828_kouriteika.pdf",
+      "etag": "\"b967-63d7763523b40\"",
+      "lastModified": "Fri, 29 Aug 2025 02:00:37 GMT",
+      "sha256": "8acb077e4726c0ea8e8d22be233fc3a478aebf95127b5121ba3ba905282906ff",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:27:19+09:00",
+      "parsedAt": "2026-09-04T16:27:19+09:00"
+    },
+    "244b04f896a6": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20250828_kouriteikahenkou.pdf",
+      "etag": "\"90a0-63d7763523b40\"",
+      "lastModified": "Fri, 29 Aug 2025 02:00:37 GMT",
+      "sha256": "58461ee6338b39c78b92d3d072c0f4732964af486292b806ab0823cd79ef3c8a",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:27:20+09:00",
+      "parsedAt": "2026-09-04T16:27:20+09:00"
+    },
+    "8b8defb9e0c1": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/20250826_kouriteika.pdf",
+      "etag": "\"afda-63d4f2653c9c0\"",
+      "lastModified": "Wed, 27 Aug 2025 02:00:15 GMT",
+      "sha256": "3c7b41da862cc074a0690dd2c1b7fc000303124f4f49f7ef834dc096c1d97cf8",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:27:22+09:00",
+      "parsedAt": "2026-09-04T16:27:22+09:00"
+    },
+    "098e30248787": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/20250808_kouriteika_1.pdf",
+      "etag": "\"a759-63d4f2653c9c0\"",
+      "lastModified": "Wed, 27 Aug 2025 02:00:15 GMT",
+      "sha256": "43f3ffbf45fb37b54b6d3dedd7ffd0b2cce7799d9cec57d05ffd6b8f77631ebd",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:27:23+09:00",
+      "parsedAt": "2026-09-04T16:27:23+09:00"
+    },
+    "324fc344ed44": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20250728_kouriteika.pdf",
+      "etag": "\"94b2-63b07c4fd2c00\"",
+      "lastModified": "Tue, 29 Jul 2025 02:00:16 GMT",
+      "sha256": "f40b7df2c32d81c238a9ed4366216a888df55789bf6f8e74822473c1072536e3",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:27:25+09:00",
+      "parsedAt": "2026-09-04T16:27:25+09:00"
+    },
+    "6e35047f1752": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20250724_kouriteika.pdf",
+      "etag": "\"89fe-63ab74ddcb500\"",
+      "lastModified": "Fri, 25 Jul 2025 02:00:20 GMT",
+      "sha256": "c2dc98f67ed99ac41a018a82712e3b5b293f1f3371b83a4f752398ab31db21e6",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:27:29+09:00",
+      "parsedAt": "2026-09-04T16:27:29+09:00"
+    },
+    "b938474e01f9": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20250723_kouriteika.pdf",
+      "etag": "\"bc46-63aa330331bc0\"",
+      "lastModified": "Thu, 24 Jul 2025 02:00:23 GMT",
+      "sha256": "e738135b35e23b0d756d9c28cea31e334df2e476ae6a156c13fe5e91b95b2e77",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:27:30+09:00",
+      "parsedAt": "2026-09-04T16:27:30+09:00"
+    },
+    "db62372fa336": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20250716_kouriteikahenkou.pdf",
+      "etag": "\"93ad-63a165f6e0040\"",
+      "lastModified": "Thu, 17 Jul 2025 02:00:25 GMT",
+      "sha256": "57913fc0fdcc8c2055d8b3b8d87ebca9d6dfacc1c49f31c7f6396a6dee8488ec",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:27:31+09:00",
+      "parsedAt": "2026-09-04T16:27:31+09:00"
+    },
+    "12d10b69a57a": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20250711_kouriteika.pdf",
+      "etag": "\"9fd2-639da05ba1980\"",
+      "lastModified": "Mon, 14 Jul 2025 02:00:22 GMT",
+      "sha256": "fdbbc8c950cd5dc9682ffad7d88398cad22ca69da3e37c2aaa0015fe1f3b9a8e",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:27:33+09:00",
+      "parsedAt": "2026-09-04T16:27:33+09:00"
+    },
+    "329335d5ce18": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20250627_kouriteikahenkou.pdf",
+      "etag": "\"a4b1-638c0645da940\"",
+      "lastModified": "Mon, 30 Jun 2025 02:00:29 GMT",
+      "sha256": "d127cd7d8666b3915c25f11b5139a7ae0b49f3644afbe0e2145765606f363190",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:27:34+09:00",
+      "parsedAt": "2026-09-04T16:27:34+09:00"
+    },
+    "bb94d100ddfb": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20250626_kouriteika.pdf",
+      "etag": "\"8ce5-638840a8b3e00\"",
+      "lastModified": "Fri, 27 Jun 2025 02:00:24 GMT",
+      "sha256": "c415ca015e850f2081b4bacf45e59847290d6689c13189fbaeac4fc9a42477e4",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:27:36+09:00",
+      "parsedAt": "2026-09-04T16:27:36+09:00"
+    },
+    "289ff8625660": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/20250625_kouriteika_2.pdf",
+      "etag": "\"8757-6386fed002940\"",
+      "lastModified": "Thu, 26 Jun 2025 02:00:29 GMT",
+      "sha256": "63c138931080607429ed066e11816a3d020ffba7b84f1ecc74e20ccd0c3db902",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:27:38+09:00",
+      "parsedAt": "2026-09-04T16:27:38+09:00"
+    },
+    "c6182471050d": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/20250625_kouriteika_1.pdf",
+      "etag": "\"8e76-6386fed002940\"",
+      "lastModified": "Thu, 26 Jun 2025 02:00:29 GMT",
+      "sha256": "4bd3b7a974a39216ec9f530dd20a4b53fe82e7a2507a705c1688f912bcb1a642",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:27:39+09:00",
+      "parsedAt": "2026-09-04T16:27:39+09:00"
+    },
+    "88ac5e2c4408": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20250619_kouriteika.pdf",
+      "etag": "\"85e5-637f739f3e940\"",
+      "lastModified": "Fri, 20 Jun 2025 02:00:29 GMT",
+      "sha256": "4d50f3243fe110d897eb629b4306adf3cc5458a7f39047ceaba0fc32ddf92da4",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:27:40+09:00",
+      "parsedAt": "2026-09-04T16:27:40+09:00"
+    },
+    "9f492b420259": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20250610_kouriteika.pdf",
+      "etag": "\"bd5d-637422d248040\"",
+      "lastModified": "Wed, 11 Jun 2025 02:00:25 GMT",
+      "sha256": "58c8f3203f9db944a9e8a814198bf9c1e10305ca9965761a9ff44421703e9d6a",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:27:44+09:00",
+      "parsedAt": "2026-09-04T16:27:44+09:00"
+    },
+    "6a5b6ed57620": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20250530_kouriteika.pdf",
+      "etag": "\"94b2-6368d20922040\"",
+      "lastModified": "Mon, 02 Jun 2025 02:00:25 GMT",
+      "sha256": "5f705828ea4c73035625790caac6d66feb5be9c2d70b628e36802a8dfc1b1009",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:27:45+09:00",
+      "parsedAt": "2026-09-04T16:27:45+09:00"
+    },
+    "ecd92c037e7a": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20250521_kouriteikahenkou.pdf",
+      "etag": "\"aa8e-635afd8510040\"",
+      "lastModified": "Thu, 22 May 2025 02:00:25 GMT",
+      "sha256": "71e55baad5139913fd71f8cc839f01ddcea70eca92c611c0e49a8d6466f09cec",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:27:47+09:00",
+      "parsedAt": "2026-09-04T16:27:47+09:00"
+    },
+    "511aa352c39c": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20250521_kouriteika.pdf",
+      "etag": "\"a681-635afd8510040\"",
+      "lastModified": "Thu, 22 May 2025 02:00:25 GMT",
+      "sha256": "c9257923f23d9c162215d8f2230d60395a5180fe6c3564fdab08bd1d69554067",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:27:48+09:00",
+      "parsedAt": "2026-09-04T16:27:48+09:00"
+    },
+    "05ead98a3aca": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20250514_kouriteikahenkou.pdf",
+      "etag": "\"91c4-63523077ca280\"",
+      "lastModified": "Thu, 15 May 2025 02:00:26 GMT",
+      "sha256": "9b7183dc8d454826a6cd902a2c2ee49e4594080f1f103607b848652fd78b9b04",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:27:50+09:00",
+      "parsedAt": "2026-09-04T16:27:50+09:00"
+    },
+    "a4031519e997": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20250514_kouriteika.pdf",
+      "etag": "\"b520-63523076d6040\"",
+      "lastModified": "Thu, 15 May 2025 02:00:25 GMT",
+      "sha256": "14ccff2665ab264ac8a81f1d3cd82e2c88ca780f39d0c4b7912b69a9738ead79",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:27:51+09:00",
+      "parsedAt": "2026-09-04T16:27:51+09:00"
+    },
+    "0690a6f52400": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20250513_kouriteika.pdf",
+      "etag": "\"9052-6350ee9c3c700\"",
+      "lastModified": "Wed, 14 May 2025 02:00:28 GMT",
+      "sha256": "a524b0d9fb231d7580c03c70148655d9d08a9a3deb3a6d9949ad75d0937fa7c3",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:27:53+09:00",
+      "parsedAt": "2026-09-04T16:27:53+09:00"
+    },
+    "691fb3221c16": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20250509_kouriteika.pdf",
+      "etag": "\"8fb7-634e6adc8bbc0\"",
+      "lastModified": "Mon, 12 May 2025 02:00:23 GMT",
+      "sha256": "48661fc03a57486f33592d06b864ddc1e59b56eee6e9f2f5f94d00174c13c9ad",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:27:54+09:00",
+      "parsedAt": "2026-09-04T16:27:54+09:00"
+    },
+    "1b5d19eb8750": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20250502_kouriteika.pdf",
+      "etag": "\"8af7-6348218ef6940\"",
+      "lastModified": "Wed, 07 May 2025 02:00:29 GMT",
+      "sha256": "6ad0e42f4ea0ac742553ed622c87f79d69fbd39a66f8bd550e0e8c3bcdde4a5b",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:27:56+09:00",
+      "parsedAt": "2026-09-04T16:27:56+09:00"
+    },
+    "70d33c3ea8b9": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20250430_kouriteikahenkou_2.pdf",
+      "etag": "\"a269-634096596de00\"",
+      "lastModified": "Thu, 01 May 2025 02:00:24 GMT",
+      "sha256": "8acf15d01e9b3a17e8f908a12cda9e3671959bebfa4b2d080685664f2742745f",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:27:57+09:00",
+      "parsedAt": "2026-09-04T16:27:57+09:00"
+    },
+    "77807fbd2310": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20250430_kouriteikahenkou_1.pdf",
+      "etag": "\"af70-634096596de00\"",
+      "lastModified": "Thu, 01 May 2025 02:00:24 GMT",
+      "sha256": "bd29cb783331f969bef281e4d620657a484fe38ea90d9267b99b445d0190a32d",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:27:59+09:00",
+      "parsedAt": "2026-09-04T16:27:59+09:00"
+    },
+    "c1e8a943617d": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20250425_kouriteika.pdf",
+      "etag": "\"ce99-633cd0c10be00\"",
+      "lastModified": "Mon, 28 Apr 2025 02:00:24 GMT",
+      "sha256": "b6558d3557c431cf356cc89ad9c2bb970055307168346533184cad1f5bff95c5",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:28:00+09:00",
+      "parsedAt": "2026-09-04T16:28:00+09:00"
+    },
+    "3d8da478a2ba": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20250425_kouriteikahenkou.pdf",
+      "etag": "\"f3c8-633cd0c10be00\"",
+      "lastModified": "Mon, 28 Apr 2025 02:00:24 GMT",
+      "sha256": "137ac73443f835ff6acb1c58ed1c15ccce85522af50de5a1c6158c0d2a2a6bb2",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:28:02+09:00",
+      "parsedAt": "2026-09-04T16:28:02+09:00"
+    },
+    "b15f6461052a": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20250421_kouriteika.pdf",
+      "etag": "\"8de4-63354593244c0\"",
+      "lastModified": "Tue, 22 Apr 2025 02:00:27 GMT",
+      "sha256": "ab483b56ac3d8d52c96c505563806eb91b0ab93cc6d57eac8eb7447a9505470e",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:28:04+09:00",
+      "parsedAt": "2026-09-04T16:28:04+09:00"
+    },
+    "41a1a064a32b": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20250408_kouriteikahenkou.pdf",
+      "etag": "\"96f7-6324ed5055bc0\"",
+      "lastModified": "Wed, 09 Apr 2025 02:00:23 GMT",
+      "sha256": "5f4576d9b29725182dd4184be436b18294b38e2dbb5c0e3c5ae0e5a1521c91e0",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:28:05+09:00",
+      "parsedAt": "2026-09-04T16:28:05+09:00"
+    },
+    "955e01e953f8": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20250408_kouriteika.pdf",
+      "etag": "\"a856-6324ed5055bc0\"",
+      "lastModified": "Wed, 09 Apr 2025 02:00:23 GMT",
+      "sha256": "7f391bf73ec4e0c5a4960ccdb04a556d7bacf088643a9c6731afc7887a4827e7",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:28:06+09:00",
+      "parsedAt": "2026-09-04T16:28:06+09:00"
+    },
+    "a30ddfea8ce8": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20250407_kouriteika.pdf",
+      "etag": "\"8c26-6323ab77a4700\"",
+      "lastModified": "Tue, 08 Apr 2025 02:00:28 GMT",
+      "sha256": "667a6fe080e53f0da2b01922250bf978ea136ae698ef97254e02787c61b9c661",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:28:08+09:00",
+      "parsedAt": "2026-09-04T16:28:08+09:00"
+    },
+    "c5465ea32a03": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20250403_kouriteika.pdf",
+      "etag": "\"94b2-631ea400d84c0\"",
+      "lastModified": "Fri, 04 Apr 2025 02:00:27 GMT",
+      "sha256": "734a90485208416d166822ce2408629ce4c53d9a2a68e9109ea565120eb04f16",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:28:09+09:00",
+      "parsedAt": "2026-09-04T16:28:09+09:00"
+    },
+    "52fd723b8d65": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20250331_kouriteika.pdf",
+      "etag": "\"9e8e-631ade6d3b000\"",
+      "lastModified": "Tue, 01 Apr 2025 02:00:32 GMT",
+      "sha256": "f0d327463e6ca49c0c33b5bce9a9d283cd3c56c9fb567b735301e7b82f7aa2c0",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:28:11+09:00",
+      "parsedAt": "2026-09-04T16:28:11+09:00"
+    },
+    "b78842b6c469": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20250319_kouriteika.pdf",
+      "etag": "\"bea1-630d09e27c040\"",
+      "lastModified": "Fri, 21 Mar 2025 02:00:25 GMT",
+      "sha256": "91f54828258d8a8da21cf96f9036a2a4162d18dc49f24464db55124f99775644",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:28:12+09:00",
+      "parsedAt": "2026-09-04T16:28:12+09:00"
+    },
+    "782634a6e8c7": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20250318_kouriteikahenkou.pdf",
+      "etag": "\"bd7b-630a8622cb500\"",
+      "lastModified": "Wed, 19 Mar 2025 02:00:20 GMT",
+      "sha256": "4c833382854252a94d269a09f4022d95e773bc1d065aee511b78ac555be9c7e7",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:28:14+09:00",
+      "parsedAt": "2026-09-04T16:28:14+09:00"
+    },
+    "4c0faefc9d28": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20250313_kouriteika.pdf",
+      "etag": "\"8f46-63043cd165980\"",
+      "lastModified": "Fri, 14 Mar 2025 02:00:22 GMT",
+      "sha256": "0357893f03e925ab2e6782c91495e098ea56dddb141f10512f8650d107ab20d9",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:28:17+09:00",
+      "parsedAt": "2026-09-04T16:28:17+09:00"
+    },
+    "774743c411c0": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20250311_kouriteikahenkou.pdf",
+      "etag": "\"ab75-6301b91861e00\"",
+      "lastModified": "Wed, 12 Mar 2025 02:00:24 GMT",
+      "sha256": "4d125cce2a5c3f3f4505461ad4511093ce4222eef920285442b60e7678015c4f",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:28:19+09:00",
+      "parsedAt": "2026-09-04T16:28:19+09:00"
+    },
+    "b04253b25244": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20250304_kouriteikahenkou.pdf",
+      "etag": "\"bd73-62f8ec0eec940\"",
+      "lastModified": "Wed, 05 Mar 2025 02:00:29 GMT",
+      "sha256": "c5e8281a8f49345a8b294e36640a96c90abfe1deec848690ca41d787bdbe7473",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:28:21+09:00",
+      "parsedAt": "2026-09-04T16:28:21+09:00"
+    },
+    "42077458867c": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20250303_kouriteika.pdf",
+      "etag": "\"9373-62f7aa29d5740\"",
+      "lastModified": "Tue, 04 Mar 2025 02:00:21 GMT",
+      "sha256": "7a881eb782e1c3f2dc1f18c17093a6d85a79234c148a66a945467535877d6468",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:28:22+09:00",
+      "parsedAt": "2026-09-04T16:28:22+09:00"
+    },
+    "a8527fc25391": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20250228_kouriteikahenkou.pdf",
+      "etag": "\"a694-62f6685030040\"",
+      "lastModified": "Mon, 03 Mar 2025 02:00:25 GMT",
+      "sha256": "5dda134bcc7ce2981dec02bf31dcbbf5f56768af2b882ac8fd221ec033da710a",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:28:24+09:00",
+      "parsedAt": "2026-09-04T16:28:24+09:00"
+    },
+    "c9b4862a298d": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20250212_kouriteika.pdf",
+      "etag": "\"8976-62dfc6b91f500\"",
+      "lastModified": "Thu, 13 Feb 2025 02:00:20 GMT",
+      "sha256": "d7546b31fbe2bff0dc5206522f7dc01318eb16226dde003bed5381e3d54682a7",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:28:25+09:00",
+      "parsedAt": "2026-09-04T16:28:25+09:00"
+    },
+    "bf55503d6d36": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20250205_kouriteika.pdf",
+      "etag": "\"95d6-62d6f9b46eb80\"",
+      "lastModified": "Thu, 06 Feb 2025 02:00:30 GMT",
+      "sha256": "b932c3444a2d2dae38bee5beffad9ae03a5e853a8512d2bc92d3afe9c10d71fe",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:28:26+09:00",
+      "parsedAt": "2026-09-04T16:28:26+09:00"
+    },
+    "3c5cc800e6de": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20250121_kouriteika_2.pdf",
+      "etag": "\"a41f-62c41db2e3980\"",
+      "lastModified": "Wed, 22 Jan 2025 02:00:22 GMT",
+      "sha256": "501be221873e6d7f9398b0e7bcb5e977edfb799d836e51310d32d28d12297225",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:28:28+09:00",
+      "parsedAt": "2026-09-04T16:28:28+09:00"
+    },
+    "77136cb09bb2": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/20250121_kouriteika_1.pdf",
+      "etag": "\"8dc6-62c41db2e3980\"",
+      "lastModified": "Wed, 22 Jan 2025 02:00:22 GMT",
+      "sha256": "513391ef71768c7c7c32ff472159cdc345eb7de4ecb9c962619968d344fd32e1",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:28:31+09:00",
+      "parsedAt": "2026-09-04T16:28:31+09:00"
+    },
+    "48ffa1133aeb": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20250115_kouriteika_2.pdf",
+      "etag": "\"98c7-62bc927c66c00\"",
+      "lastModified": "Thu, 16 Jan 2025 02:00:16 GMT",
+      "sha256": "466513d485cd6fb39e28bbfa58260dcce14844cd06bb931e631cd26b34140a79",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:28:31+09:00",
+      "parsedAt": "2026-09-04T16:28:31+09:00"
+    },
+    "3f83400db8a8": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20250115_kouriteika_1.pdf",
+      "etag": "\"8bf6-62bc927b729c0\"",
+      "lastModified": "Thu, 16 Jan 2025 02:00:15 GMT",
+      "sha256": "3653766c9c3ca25a0960df3654341a353de8364a914c340b665446ad3797c691",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:28:33+09:00",
+      "parsedAt": "2026-09-04T16:28:33+09:00"
+    },
+    "2d83d6f84f02": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20250108_kouriteika.pdf",
+      "etag": "\"8a66-62b3c572f1740\"",
+      "lastModified": "Thu, 09 Jan 2025 02:00:21 GMT",
+      "sha256": "a89584ce6e8b74ec4988942964289a4e0ef53122f8172c3147f57e8ecfa3d9ab",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:28:34+09:00",
+      "parsedAt": "2026-09-04T16:28:34+09:00"
+    },
+    "47818c4c4de3": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20241226_kouriteika.pdf",
+      "etag": "\"9d84-62a36d32ff500\"",
+      "lastModified": "Fri, 27 Dec 2024 02:00:20 GMT",
+      "sha256": "4495f8ff819cffad7615966961d75b9df0fba9fbc0513525f2d83a187cb2745a",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:28:36+09:00",
+      "parsedAt": "2026-09-04T16:28:36+09:00"
+    },
+    "b23b2ec1cd69": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20241225_kouriteika.pdf",
+      "etag": "\"9a15-62a22b60fb000\"",
+      "lastModified": "Thu, 26 Dec 2024 02:00:32 GMT",
+      "sha256": "8dc2300563b61105a28baf3255f97fef08569b6fdb17a582962e105236bd6c9a",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:28:37+09:00",
+      "parsedAt": "2026-09-04T16:28:37+09:00"
+    },
+    "af43eecb662e": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20241223_kouriteika.pdf",
+      "etag": "\"b075-629fa79f62040\"",
+      "lastModified": "Tue, 24 Dec 2024 02:00:25 GMT",
+      "sha256": "6f200395831353b668c7e0307f58b238608fe447c10293a1f202d0c45b8d10b6",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:28:39+09:00",
+      "parsedAt": "2026-09-04T16:28:39+09:00"
+    },
+    "fe3f71fea3d5": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20241218_kouriteika.pdf",
+      "etag": "\"9c37-62995e51ccdc0\"",
+      "lastModified": "Thu, 19 Dec 2024 02:00:31 GMT",
+      "sha256": "a34fd591095fa33b808f9e12eff2c102ede38b1cc65b976f9b5cdb1548e58776",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:28:40+09:00",
+      "parsedAt": "2026-09-04T16:28:40+09:00"
+    },
+    "7ee6cf65f605": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20241217_kouriteikahenkou.pdf",
+      "etag": "\"c1fe-62981c68e52c0\"",
+      "lastModified": "Wed, 18 Dec 2024 02:00:19 GMT",
+      "sha256": "ca5c3a976ce8e27e4fe0adc4307e09a12a5d25f24f740a0c3a9e03fbe30fb1fa",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:28:42+09:00",
+      "parsedAt": "2026-09-04T16:28:42+09:00"
+    },
+    "713b1b2f1006": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20241209_kouriteika.pdf",
+      "etag": "\"8fb2-628e0d85ca700\"",
+      "lastModified": "Tue, 10 Dec 2024 02:00:28 GMT",
+      "sha256": "ef75c7cf166933e86a002139d850b469a555d93653b1a25460663d780907eab0",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:28:43+09:00",
+      "parsedAt": "2026-09-04T16:28:43+09:00"
+    },
+    "ed3005116809": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20241204_kouriteika.pdf",
+      "etag": "\"8806-6287c431884c0\"",
+      "lastModified": "Thu, 05 Dec 2024 02:00:27 GMT",
+      "sha256": "9c7a2d49bcd46e8e3b37aad2c09f61e45767db1a844b04cc7c95dcdfe1d305d4",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:28:44+09:00",
+      "parsedAt": "2026-09-04T16:28:44+09:00"
+    },
+    "2c38812cecad": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20241203_kouriteikahenkou.pdf",
+      "etag": "\"8e63-628682522a040\"",
+      "lastModified": "Wed, 04 Dec 2024 02:00:25 GMT",
+      "sha256": "b9d596fa69f6d4e4e6858d8acb4fe7c91b3c87a2205f2e19f18deea7f1f694da",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:28:46+09:00",
+      "parsedAt": "2026-09-04T16:28:46+09:00"
+    },
+    "f289c7412350": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20241126_kouriteika.pdf",
+      "etag": "\"9b68-627db5401f740\"",
+      "lastModified": "Wed, 27 Nov 2024 02:00:21 GMT",
+      "sha256": "86ca9643d7125c25751f32689af00d46aefa48a69b2b0519a001bf80d39a8907",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:28:48+09:00",
+      "parsedAt": "2026-09-04T16:28:48+09:00"
+    },
+    "f1d928e54e5e": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20241120_kouriteika.pdf",
+      "etag": "\"8716-62762a1420280\"",
+      "lastModified": "Thu, 21 Nov 2024 02:00:26 GMT",
+      "sha256": "68a24fc14fd7b3617cd78eee593c460fc8ecb13dd96312b8164c2ed07309e85b",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:28:49+09:00",
+      "parsedAt": "2026-09-04T16:28:49+09:00"
+    },
+    "92516de01c1c": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20241119_kouriteika.pdf",
+      "etag": "\"8e14-6274e830f1500\"",
+      "lastModified": "Wed, 20 Nov 2024 02:00:20 GMT",
+      "sha256": "a6a863ea2942e70553e44d616c487f242a9c895fe1340a74542d09df41694ffd",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:28:51+09:00",
+      "parsedAt": "2026-09-04T16:28:51+09:00"
+    },
+    "6e09607c226f": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20241115_kouriteika.pdf",
+      "etag": "\"a065-6272647bbe280\"",
+      "lastModified": "Mon, 18 Nov 2024 02:00:26 GMT",
+      "sha256": "4a3c183d9612b0fd18336aa8a110da81d37338721ecef413d173bc686d41cbea",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:28:53+09:00",
+      "parsedAt": "2026-09-04T16:28:53+09:00"
+    },
+    "043a5f6b7ff1": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20241022_kouriteika.pdf",
+      "etag": "\"9997-6251b3fdc2280\"",
+      "lastModified": "Wed, 23 Oct 2024 02:00:26 GMT",
+      "sha256": "c347191c1048e403d9476fb9e0356f33df08631ae915ecd2e74c3a6d458b9db1",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:29:00+09:00",
+      "parsedAt": "2026-09-04T16:29:00+09:00"
+    },
+    "0203e0e7e581": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20241016_kouriteikahenkou.pdf",
+      "etag": "\"cbc1-624a28ccfe280\"",
+      "lastModified": "Thu, 17 Oct 2024 02:00:26 GMT",
+      "sha256": "ca9e174f8007e4abc30e3b765f772278d31041194e21255ea7e2e684ec8b23ac",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:29:01+09:00",
+      "parsedAt": "2026-09-04T16:29:01+09:00"
+    },
+    "215a405fcaac": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20241004_kouriteikahenkou.pdf",
+      "etag": "\"c19f-623d962479e00\"",
+      "lastModified": "Mon, 07 Oct 2024 02:00:24 GMT",
+      "sha256": "5945120b1dcc762e63edf0faf7c755326a1fa76e83a26da1bb0c4ef28833c2e9",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:29:03+09:00",
+      "parsedAt": "2026-09-04T16:29:03+09:00"
+    },
+    "0517a45630e4": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20241004_kouriteika.pdf",
+      "etag": "\"be1e-623d962479e00\"",
+      "lastModified": "Mon, 07 Oct 2024 02:00:24 GMT",
+      "sha256": "d8537d2cb1c87d90696e31914951b116a1a5390d520d7b24c01d71b4d166c9a6",
+      "recordCount": 1,
+      "fetchedAt": "2026-09-04T16:29:05+09:00",
+      "parsedAt": "2026-09-04T16:29:05+09:00"
+    },
+    "bf853d041c4a": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20241002_kouriteika.pdf",
+      "etag": "\"8a13-62388eb17e4c0\"",
+      "lastModified": "Thu, 03 Oct 2024 02:00:27 GMT",
+      "sha256": "d4a7674b88a2890d9e73a1c0e6b679767aa6d71ebd569cb44f27e3db512b6cba",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:29:06+09:00",
+      "parsedAt": "2026-09-04T16:29:06+09:00"
+    },
+    "dabb8cf8a119": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240924_kouriteika_1.pdf",
+      "etag": "\"8c95-622e7fc3e6040\"",
+      "lastModified": "Wed, 25 Sep 2024 02:00:25 GMT",
+      "sha256": "de142434bda1117ba92373eeab9f58a213601b6c42bd2fc21dc0aeb7484dd33b",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:29:07+09:00",
+      "parsedAt": "2026-09-04T16:29:07+09:00"
+    },
+    "e6ecf61a00ce": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240924_kouriteika_2.pdf",
+      "etag": "\"b98f-622e7fc3e6040\"",
+      "lastModified": "Wed, 25 Sep 2024 02:00:25 GMT",
+      "sha256": "83eb0e1593c71e70917db623e59c5b45fba6eedda60cb222bc889b86f480cd93",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:29:09+09:00",
+      "parsedAt": "2026-09-04T16:29:09+09:00"
+    },
+    "919b7a48abf1": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240906_kouriteika_4.pdf",
+      "etag": "\"a25a-621a61ee6e4c0\"",
+      "lastModified": "Mon, 09 Sep 2024 02:00:27 GMT",
+      "sha256": "def31caa21cc3609b7b455473ac52288eea07d8040bb5257bd52f6396ab8d11c",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:29:10+09:00",
+      "parsedAt": "2026-09-04T16:29:10+09:00"
+    },
+    "09c9347ab353": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240906_kouriteika_3.pdf",
+      "etag": "\"8d85-621a61ee6e4c0\"",
+      "lastModified": "Mon, 09 Sep 2024 02:00:27 GMT",
+      "sha256": "cf2177b2757882d0504d9eb3c33948d24fa12075a90c554a8dbd8d36a71662cb",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:29:12+09:00",
+      "parsedAt": "2026-09-04T16:29:12+09:00"
+    },
+    "d143e68f977c": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240906_kouriteika_2.pdf",
+      "etag": "\"a94d-621a61ee6e4c0\"",
+      "lastModified": "Mon, 09 Sep 2024 02:00:27 GMT",
+      "sha256": "24b9e9f9b0aaadd8d8e107cefc3fb3b452d51b8135d2d527a19df652c6a20dc2",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:29:13+09:00",
+      "parsedAt": "2026-09-04T16:29:13+09:00"
+    },
+    "4d52898177b3": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240906_kouriteika_1.pdf",
+      "etag": "\"90f2-621a61ee6e4c0\"",
+      "lastModified": "Mon, 09 Sep 2024 02:00:27 GMT",
+      "sha256": "bff569f3316e0e8f1c7969d80b8f086b4f450b1879128c34aa73237489100628",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:29:15+09:00",
+      "parsedAt": "2026-09-04T16:29:15+09:00"
+    },
+    "464484b0c84a": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240903_kouriteika.pdf",
+      "etag": "\"88e6-6214189d08940\"",
+      "lastModified": "Wed, 04 Sep 2024 02:00:29 GMT",
+      "sha256": "6f6d40191863423f8ec0a4114d6e9658ec7317c0e9632d30b71662f248acc4d0",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:29:16+09:00",
+      "parsedAt": "2026-09-04T16:29:16+09:00"
+    },
+    "0b41107a64b2": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240903_kouriteikahenkou.pdf",
+      "etag": "\"9101-6214189d08940\"",
+      "lastModified": "Wed, 04 Sep 2024 02:00:29 GMT",
+      "sha256": "1361b7517d2940336488a272a23de5354bc1b767200dc947374e24102e9263cf",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:29:18+09:00",
+      "parsedAt": "2026-09-04T16:29:18+09:00"
+    },
+    "aacef7363199": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240830_kouriteikahenkou_2.pdf",
+      "etag": "\"9864-621194de4c040\"",
+      "lastModified": "Mon, 02 Sep 2024 02:00:25 GMT",
+      "sha256": "b29746a5ff378d2aef60dec68d31972fd84cc0d5f39625ccafe373fff37ad91e",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:29:19+09:00",
+      "parsedAt": "2026-09-04T16:29:19+09:00"
+    },
+    "56308cf80916": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240830_kouriteikahenkou_1.pdf",
+      "etag": "\"a1a6-621194de4c040\"",
+      "lastModified": "Mon, 02 Sep 2024 02:00:25 GMT",
+      "sha256": "2fdf1bd497cfdeb62631421d725878c916ca21bdc9ac6982b040dc34cfa177f4",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:29:21+09:00",
+      "parsedAt": "2026-09-04T16:29:21+09:00"
+    },
+    "abdfcda2ce9f": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240828_kouriteika.pdf",
+      "etag": "\"a4e4-620c8d668bbc0\"",
+      "lastModified": "Thu, 29 Aug 2024 02:00:23 GMT",
+      "sha256": "23916c9249f20caf1d2d6beeeecfc0bf8ad56d6553765b3e88f3281a602ea322",
+      "recordCount": 0,
+      "fetchedAt": "2026-09-04T16:29:22+09:00",
+      "parsedAt": "2026-09-04T16:29:22+09:00"
+    },
+    "818f967abe81": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240813_kouriteika.pdf",
+      "etag": "\"d51e-61f9b16bad980\"",
+      "lastModified": "Wed, 14 Aug 2024 02:00:22 GMT",
+      "sha256": "fa9e68127cbd0aa1253c90e8212191bd5adac4a7a56eae914dc616d14e50ace8",
+      "recordCount": 166,
+      "fetchedAt": "2026-09-04T16:29:24+09:00",
+      "parsedAt": "2026-09-04T16:29:24+09:00"
+    },
+    "6398ead43ca4": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240807_kouriteika.pdf",
+      "etag": "\"b290-61f2263719080\"",
+      "lastModified": "Thu, 08 Aug 2024 02:00:18 GMT",
+      "sha256": "dac799529cefeb2a7b3cc86534ca23e0c23e37c7cc0cf1b25de4d74c5bba807c",
+      "recordCount": 22,
+      "fetchedAt": "2026-09-04T16:29:25+09:00",
+      "parsedAt": "2026-09-04T16:29:25+09:00"
+    },
+    "75443be75278": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240726_kouriteika.pdf",
+      "etag": "\"bab8-61e5939a06700\"",
+      "lastModified": "Mon, 29 Jul 2024 02:00:28 GMT",
+      "sha256": "4db4376e328d33af165d9bcf457b66dd84b139ca20344eab59a2e80028bc7159",
+      "recordCount": 34,
+      "fetchedAt": "2026-09-04T16:29:27+09:00",
+      "parsedAt": "2026-09-04T16:29:27+09:00"
+    },
+    "9762b52a8161": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240717_kouriteika.pdf",
+      "etag": "\"94a3-61d7bf0e53500\"",
+      "lastModified": "Thu, 18 Jul 2024 02:00:20 GMT",
+      "sha256": "ccb3905c744bb5a0338e1531ea10cc72e697806bac1d310023b77be14979d39b",
+      "recordCount": 2,
+      "fetchedAt": "2026-09-04T16:29:28+09:00",
+      "parsedAt": "2026-09-04T16:29:28+09:00"
+    },
+    "139f213dd62f": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240709_kouriteika.pdf",
+      "etag": "\"79e9-61cdb0248b980\"",
+      "lastModified": "Wed, 10 Jul 2024 02:00:22 GMT",
+      "sha256": "8fae7ae1f96677b1eada8007892922adc6fc1ae31aee51198dfd52a7563ed319",
+      "recordCount": 2,
+      "fetchedAt": "2026-09-04T16:29:30+09:00",
+      "parsedAt": "2026-09-04T16:29:30+09:00"
+    },
+    "c92b2ddba313": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240628_kouriteikahenkou_2.pdf",
+      "etag": "\"d164-61c25f5a71740\"",
+      "lastModified": "Mon, 01 Jul 2024 02:00:21 GMT",
+      "sha256": "678c82049befc851a5372a1acd59b35501b587a024699baee6a488d8477597e8",
+      "recordCount": 83,
+      "fetchedAt": "2026-09-04T16:29:31+09:00",
+      "parsedAt": "2026-09-04T16:29:31+09:00"
+    },
+    "6940b6b20dd8": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240628_kouriteikahenkou_1.pdf",
+      "etag": "\"b0b9-61c25f5a71740\"",
+      "lastModified": "Mon, 01 Jul 2024 02:00:21 GMT",
+      "sha256": "202a5582da1295ef2fa45c942bc17eae6491bb460bc2e8d9ad6a07d401c3bc56",
+      "recordCount": 17,
+      "fetchedAt": "2026-09-04T16:29:33+09:00",
+      "parsedAt": "2026-09-04T16:29:33+09:00"
+    },
+    "84473fcf0942": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240627_kouriteika.pdf",
+      "etag": "\"8b2b-61be99c303980\"",
+      "lastModified": "Fri, 28 Jun 2024 02:00:22 GMT",
+      "sha256": "a0a8de80a134ce47a157b78329fc7e71b830f58588e101dcd26d59b1942b3adf",
+      "recordCount": 6,
+      "fetchedAt": "2026-09-04T16:29:34+09:00",
+      "parsedAt": "2026-09-04T16:29:34+09:00"
+    },
+    "131989d2db8e": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240621_kouriteika.pdf",
+      "etag": "\"b5dd-61b99252e4700\"",
+      "lastModified": "Mon, 24 Jun 2024 02:00:28 GMT",
+      "sha256": "5c5818a927b08a83bcd89b93a87fd06887ab97f8879d9e24771c7bff9a96e347",
+      "recordCount": 16,
+      "fetchedAt": "2026-09-04T16:29:36+09:00",
+      "parsedAt": "2026-09-04T16:29:36+09:00"
+    },
+    "416fa4acadca": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240618_kouriteika.pdf",
+      "etag": "\"77aa-61b348fea24c0\"",
+      "lastModified": "Wed, 19 Jun 2024 02:00:27 GMT",
+      "sha256": "ca371c6d3b55ec3b9a323aa44a2d7aca342347991042b4448e1df87776020a46",
+      "recordCount": 2,
+      "fetchedAt": "2026-09-04T16:29:37+09:00",
+      "parsedAt": "2026-09-04T16:29:37+09:00"
+    },
+    "2ff911be0b34": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240618_kouriteikahenkou_2.pdf",
+      "etag": "\"dc74-61d7bf0f47740\"",
+      "lastModified": "Thu, 18 Jul 2024 02:00:21 GMT",
+      "sha256": "6f777f7b14271f06f13f4bb483e005af5c2c3ea08d83389d7250bedfbe72258a",
+      "recordCount": 97,
+      "fetchedAt": "2026-09-04T16:29:39+09:00",
+      "parsedAt": "2026-09-04T16:29:39+09:00"
+    },
+    "62d858e3b8b5": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/20240617_kouriteikahenkou.pdf",
+      "etag": "\"8f5d-61b2071897080\"",
+      "lastModified": "Tue, 18 Jun 2024 02:00:18 GMT",
+      "sha256": "d3f866e4948087438df86915ba0e318b557136ab122ec8a319eac4be097c6390",
+      "recordCount": 2,
+      "fetchedAt": "2026-09-04T16:29:41+09:00",
+      "parsedAt": "2026-09-04T16:29:41+09:00"
+    },
+    "d764c8a9439d": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240607_kouriteikahenkou.pdf",
+      "etag": "\"8d8c-61a7f830b7980\"",
+      "lastModified": "Mon, 10 Jun 2024 02:00:22 GMT",
+      "sha256": "6d4c68a31a9dff160a79d60e77db9189f467fa9bfad75d20fa2745518c0f33dd",
+      "recordCount": 5,
+      "fetchedAt": "2026-09-04T16:29:42+09:00",
+      "parsedAt": "2026-09-04T16:29:42+09:00"
+    },
+    "5baf67df71cb": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240607_kouriteika.pdf",
+      "etag": "\"95cd-61a7f830b7980\"",
+      "lastModified": "Mon, 10 Jun 2024 02:00:22 GMT",
+      "sha256": "c66730bd68fe9e315db4c0bbed40447ac0db0879024c0c8fb67c7a8974c5d06a",
+      "recordCount": 13,
+      "fetchedAt": "2026-09-04T16:29:43+09:00",
+      "parsedAt": "2026-09-04T16:29:43+09:00"
+    },
+    "90b995620d8d": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240603_kouriteika_2.pdf",
+      "etag": "\"a28d-61a06cfc23080\"",
+      "lastModified": "Tue, 04 Jun 2024 02:00:18 GMT",
+      "sha256": "64a1c4f0ddbe076705aa2c635db16cbbc43aeac50ab52141a452828f25cde65e",
+      "recordCount": 14,
+      "fetchedAt": "2026-09-04T16:29:45+09:00",
+      "parsedAt": "2026-09-04T16:29:45+09:00"
+    },
+    "f681b40aa7cc": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240603_kouriteika_1.pdf",
+      "etag": "\"9b3a-61a06cfc23080\"",
+      "lastModified": "Tue, 04 Jun 2024 02:00:18 GMT",
+      "sha256": "6d58c401164a2519a5daf19b26cad4032cd51edeb74cf59e41af8eefe8aff6dc",
+      "recordCount": 7,
+      "fetchedAt": "2026-09-04T16:29:47+09:00",
+      "parsedAt": "2026-09-04T16:29:47+09:00"
+    },
+    "f3455e6bdd03": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240530_kouriteikahenkou.pdf",
+      "etag": "\"8a0b-619b6591bcb80\"",
+      "lastModified": "Fri, 31 May 2024 02:00:30 GMT",
+      "sha256": "eb1e4087b6335da781a383801b490a8c4d7fd93f5474037a8c5d6288830e3d36",
+      "recordCount": 1,
+      "fetchedAt": "2026-09-04T16:29:54+09:00",
+      "parsedAt": "2026-09-04T16:29:54+09:00"
+    },
+    "d368d2b3dba0": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240527_kouriteika.pdf",
+      "etag": "\"ab57-61979fefd1500\"",
+      "lastModified": "Tue, 28 May 2024 02:00:20 GMT",
+      "sha256": "c799c76f698ecc03d9410efa559211e75ca2c4b278b1978f6b339497c5c7cb9b",
+      "recordCount": 150,
+      "fetchedAt": "2026-09-04T16:29:55+09:00",
+      "parsedAt": "2026-09-04T16:29:55+09:00"
+    },
+    "702b34d99d49": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240522_kouriteika.pdf",
+      "etag": "\"b307-619156a053e00\"",
+      "lastModified": "Thu, 23 May 2024 02:00:24 GMT",
+      "sha256": "1af370dbe61bf51a3e1852dffb644cef2bcd1b62ede81e2a0d26f3eca9768ad2",
+      "recordCount": 20,
+      "fetchedAt": "2026-09-04T16:29:57+09:00",
+      "parsedAt": "2026-09-04T16:29:57+09:00"
+    },
+    "d5a536e22e61": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240517_kouriteika.pdf",
+      "etag": "\"96ad-618d91032d2c0\"",
+      "lastModified": "Mon, 20 May 2024 02:00:19 GMT",
+      "sha256": "a4fb7edbadbb53910a1c75604e09b86c75bd2dd3f1bd8fd32a6a595bdb90cbe9",
+      "recordCount": 35,
+      "fetchedAt": "2026-09-04T16:29:58+09:00",
+      "parsedAt": "2026-09-04T16:29:58+09:00"
+    },
+    "ca9b621fb4d0": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240515_kouriteika.pdf",
+      "etag": "\"a8ed-6188898e49500\"",
+      "lastModified": "Thu, 16 May 2024 02:00:20 GMT",
+      "sha256": "a1371ad7289f6946003646393b7abde27f82932f84ec7cef802bc78e6986dfde",
+      "recordCount": 10,
+      "fetchedAt": "2026-09-04T16:30:00+09:00",
+      "parsedAt": "2026-09-04T16:30:00+09:00"
+    },
+    "edf1f1b00567": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240514_kouriteika.pdf",
+      "etag": "\"9f6d-618747b1c7740\"",
+      "lastModified": "Wed, 15 May 2024 02:00:21 GMT",
+      "sha256": "bf0e1b3254c014cb1710c8d1e0f2b70beec29e037de4eb68804bed57e60b97df",
+      "recordCount": 11,
+      "fetchedAt": "2026-09-04T16:30:01+09:00",
+      "parsedAt": "2026-09-04T16:30:01+09:00"
+    },
+    "74745ad0f32f": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240508_kouriteikahenkou.pdf",
+      "etag": "\"9cf4-617fbc84d4040\"",
+      "lastModified": "Thu, 09 May 2024 02:00:25 GMT",
+      "sha256": "28d05f600764a1544fb118e10e0138de42d47b5dd03ef13857ba8b49e679f061",
+      "recordCount": 7,
+      "fetchedAt": "2026-09-04T16:30:03+09:00",
+      "parsedAt": "2026-09-04T16:30:03+09:00"
+    },
+    "bf55cd02e0ca": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240426_kouriteika.pdf",
+      "etag": "\"aedf-61746bb6e9500\"",
+      "lastModified": "Tue, 30 Apr 2024 02:00:20 GMT",
+      "sha256": "e910932320253c0ee908364debfdc022865dd15e836e5fff1acf1ef3b83fe5bb",
+      "recordCount": 28,
+      "fetchedAt": "2026-09-04T16:30:05+09:00",
+      "parsedAt": "2026-09-04T16:30:05+09:00"
+    },
+    "c6d3cae5bdc4": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240424_kouriteikahenkou.pdf",
+      "etag": "\"107a0-616e228e85a40\"",
+      "lastModified": "Thu, 25 Apr 2024 02:01:05 GMT",
+      "sha256": "7bb127ce0147229dfcd7279f80d12aa6adb25888089e118408cbcee1d0ee69ac",
+      "recordCount": 200,
+      "fetchedAt": "2026-09-04T16:30:06+09:00",
+      "parsedAt": "2026-09-04T16:30:06+09:00"
+    },
+    "455150d45ccb": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240417_kouriteika.pdf",
+      "etag": "\"7f3c-6165554fa8780\"",
+      "lastModified": "Thu, 18 Apr 2024 02:00:14 GMT",
+      "sha256": "683f3ba9f80461dacf745f30aa59b0d4d54c47c4c951f809011b7875b6173dac",
+      "recordCount": 2,
+      "fetchedAt": "2026-09-04T16:30:07+09:00",
+      "parsedAt": "2026-09-04T16:30:07+09:00"
+    },
+    "a457c3b1cc31": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240415_kouriteika.pdf",
+      "etag": "\"b2f8-6162d1ad88200\"",
+      "lastModified": "Tue, 16 Apr 2024 02:00:40 GMT",
+      "sha256": "7f7fa76f15a33433a06fa0bd81895736093855272a8dd60a6174bfe728ca1777",
+      "recordCount": 17,
+      "fetchedAt": "2026-09-04T16:30:09+09:00",
+      "parsedAt": "2026-09-04T16:30:09+09:00"
+    },
+    "20f8d83deeb0": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240412_kouriteika.pdf",
+      "etag": "\"aaba-61618fba22e40\"",
+      "lastModified": "Mon, 15 Apr 2024 02:00:17 GMT",
+      "sha256": "81230a0beda554483ecdb3c314f644205fdb342b227d0044641df09a24bf0454",
+      "recordCount": 31,
+      "fetchedAt": "2026-09-04T16:30:10+09:00",
+      "parsedAt": "2026-09-04T16:30:10+09:00"
+    },
+    "693e640d7286": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240412_kouriteikahenkou.pdf",
+      "etag": "\"a136-61618fba22e40\"",
+      "lastModified": "Mon, 15 Apr 2024 02:00:17 GMT",
+      "sha256": "51af41a1aef9df48a692e779ce19fa35d60d54e7a773d0a6b7237d2e9f1f7971",
+      "recordCount": 10,
+      "fetchedAt": "2026-09-04T16:30:12+09:00",
+      "parsedAt": "2026-09-04T16:30:12+09:00"
+    },
+    "0acd8a93e22c": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240410_kouriteika.pdf",
+      "etag": "\"942d-615c88490f980\"",
+      "lastModified": "Thu, 11 Apr 2024 02:00:22 GMT",
+      "sha256": "7768f875cd5b6afd02950f675af275b505d628cdc237833234da7cdf8619d074",
+      "recordCount": 14,
+      "fetchedAt": "2026-09-04T16:30:13+09:00",
+      "parsedAt": "2026-09-04T16:30:13+09:00"
+    },
+    "72ce5c92a9e9": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240403_kouriteika.pdf",
+      "etag": "\"786a-6153bb38ed500\"",
+      "lastModified": "Thu, 04 Apr 2024 02:00:20 GMT",
+      "sha256": "c179e48be67ecc95edaad67346d5c0f7cd7829a80924ec73eca5df16e4bcdfa3",
+      "recordCount": 1,
+      "fetchedAt": "2026-09-04T16:30:15+09:00",
+      "parsedAt": "2026-09-04T16:30:15+09:00"
+    },
+    "b62f531baf42": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240328_kouriteika.pdf",
+      "etag": "\"979c-614c300ed64c0\"",
+      "lastModified": "Fri, 29 Mar 2024 02:00:27 GMT",
+      "sha256": "2b792696246fa99bbacde3a2b300394115e901c9e262f11e78fe881962258859",
+      "recordCount": 9,
+      "fetchedAt": "2026-09-04T16:30:16+09:00",
+      "parsedAt": "2026-09-04T16:30:16+09:00"
+    },
+    "6a78eceac8a7": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240327_kouriteika.pdf",
+      "etag": "\"9b2c-614aee26e2c00\"",
+      "lastModified": "Thu, 28 Mar 2024 02:00:16 GMT",
+      "sha256": "359fb2e8b9c978a6c3f61b0df75f5b63858202096ebdbca02b6bd68a9ec7ce83",
+      "recordCount": 9,
+      "fetchedAt": "2026-09-04T16:30:20+09:00",
+      "parsedAt": "2026-09-04T16:30:20+09:00"
+    },
+    "8fdbcd7f9e3a": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240326_kouriteika_2.pdf",
+      "etag": "\"8acb-6149ac5202040\"",
+      "lastModified": "Wed, 27 Mar 2024 02:00:25 GMT",
+      "sha256": "66a0b61c847702f20339a670adac8f30021bfcc3ab3dbf0736eaf6e435862e3d",
+      "recordCount": 4,
+      "fetchedAt": "2026-09-04T16:30:22+09:00",
+      "parsedAt": "2026-09-04T16:30:22+09:00"
+    },
+    "a1b9c879cec9": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240326_kouriteika_1.pdf",
+      "etag": "\"9fdd-6149ac510de00\"",
+      "lastModified": "Wed, 27 Mar 2024 02:00:24 GMT",
+      "sha256": "5d39870267206882c8cfc3a08e484e70ef873c06ec1f642376f1a9bc956d3766",
+      "recordCount": 38,
+      "fetchedAt": "2026-09-04T16:30:23+09:00",
+      "parsedAt": "2026-09-04T16:30:23+09:00"
+    },
+    "57b8320a6710": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240319_kouriteika.pdf",
+      "etag": "\"9d19-6142212232280\"",
+      "lastModified": "Thu, 21 Mar 2024 02:00:26 GMT",
+      "sha256": "7333b00b6146b3f036b6081b7a55056ad05e24838239f57fff04dc113a3cedb0",
+      "recordCount": 19,
+      "fetchedAt": "2026-09-04T16:30:24+09:00",
+      "parsedAt": "2026-09-04T16:30:24+09:00"
+    },
+    "9a1802149efb": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240315_kouriteika.pdf",
+      "etag": "\"895c-613e5b850b740\"",
+      "lastModified": "Mon, 18 Mar 2024 02:00:21 GMT",
+      "sha256": "6753daf3d657ffb3e56845a8050dd438a9fffe54c0056c17f9924640aeba8299",
+      "recordCount": 8,
+      "fetchedAt": "2026-09-04T16:30:26+09:00",
+      "parsedAt": "2026-09-04T16:30:26+09:00"
+    },
+    "8a32febc32e6": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240312_kouriteikahenkou.pdf",
+      "etag": "\"9c2e-6138122fd52c0\"",
+      "lastModified": "Wed, 13 Mar 2024 02:00:19 GMT",
+      "sha256": "7469e54fa3bfd42970d63f134f56dcef73e9a48a0adbeb69534cd8477dbc719a",
+      "recordCount": 9,
+      "fetchedAt": "2026-09-04T16:30:27+09:00",
+      "parsedAt": "2026-09-04T16:30:27+09:00"
+    },
+    "542b55ba20f8": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240308_kouriteika.pdf",
+      "etag": "\"964b-61358e73f5080\"",
+      "lastModified": "Mon, 11 Mar 2024 02:00:18 GMT",
+      "sha256": "a0143f2455737c7db4f6bee23316f4d03a9357c47884b502905980827cc69f55",
+      "recordCount": 6,
+      "fetchedAt": "2026-09-04T16:30:29+09:00",
+      "parsedAt": "2026-09-04T16:30:29+09:00"
+    },
+    "302acadc547b": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240227_kouriteika_2.pdf",
+      "etag": "\"978b-6126781549740\"",
+      "lastModified": "Wed, 28 Feb 2024 02:00:21 GMT",
+      "sha256": "b5b85fd8116ad1433e2eb9289b35b07368a5e58c006aec6719f6e6245ff7bdfd",
+      "recordCount": 12,
+      "fetchedAt": "2026-09-04T16:30:30+09:00",
+      "parsedAt": "2026-09-04T16:30:30+09:00"
+    },
+    "602d5eff8556": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240227_kouriteika_1.pdf",
+      "etag": "\"9dde-6126781549740\"",
+      "lastModified": "Wed, 28 Feb 2024 02:00:21 GMT",
+      "sha256": "64b7fe120482bf9f3d331475f4c8da2da684379f8b230c153b925ae7ad1b0a47",
+      "recordCount": 28,
+      "fetchedAt": "2026-09-04T16:30:32+09:00",
+      "parsedAt": "2026-09-04T16:30:32+09:00"
+    },
+    "9f149bdf08e9": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240220_kouriteika_2.pdf",
+      "etag": "\"96be-611dab024ac00\"",
+      "lastModified": "Wed, 21 Feb 2024 02:00:16 GMT",
+      "sha256": "90a2c07b1426b93311eadb92cae67dfc93c05b69c9e289c60338b754d36329cd",
+      "recordCount": 14,
+      "fetchedAt": "2026-09-04T16:30:36+09:00",
+      "parsedAt": "2026-09-04T16:30:36+09:00"
+    },
+    "1d6e556b0dda": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240220_kouriteika_1.pdf",
+      "etag": "\"7b9b-611dab024ac00\"",
+      "lastModified": "Wed, 21 Feb 2024 02:00:16 GMT",
+      "sha256": "c37a394c06af474d370e387e791acb490264aa3e53c01354c2e8dc6411dfbec1",
+      "recordCount": 2,
+      "fetchedAt": "2026-09-04T16:30:37+09:00",
+      "parsedAt": "2026-09-04T16:30:37+09:00"
+    },
+    "2329a2de2942": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240215_kouriteika.pdf",
+      "etag": "\"809b-611761b2cd500\"",
+      "lastModified": "Fri, 16 Feb 2024 02:00:20 GMT",
+      "sha256": "37ff5f51cd08bd847c0ac6d0c95e2a9581014e38aecaf3e4e63dff226c793813",
+      "recordCount": 2,
+      "fetchedAt": "2026-09-04T16:30:39+09:00",
+      "parsedAt": "2026-09-04T16:30:39+09:00"
+    },
+    "b0423c9df04b": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240214_kouriteika.pdf",
+      "etag": "\"7c2b-61161fd36f080\"",
+      "lastModified": "Thu, 15 Feb 2024 02:00:18 GMT",
+      "sha256": "3779c34191dc7fe9e1206f7115de18c9d096f43d8f6707cc811a0e116424a959",
+      "recordCount": 2,
+      "fetchedAt": "2026-09-04T16:30:40+09:00",
+      "parsedAt": "2026-09-04T16:30:40+09:00"
+    },
+    "2cb9f53881a0": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240208_kouriteika.pdf",
+      "etag": "\"7f2d-610e94a587740\"",
+      "lastModified": "Fri, 09 Feb 2024 02:00:21 GMT",
+      "sha256": "450dbce5dfbb69e1e85cdec2a2cabd43d860d74390d588897f0c20cdce2a29f8",
+      "recordCount": 1,
+      "fetchedAt": "2026-09-04T16:30:41+09:00",
+      "parsedAt": "2026-09-04T16:30:41+09:00"
+    },
+    "aae4ab0154a9": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240131_kouriteika.pdf",
+      "etag": "\"bbc9-610485b7ef2c0\"",
+      "lastModified": "Thu, 01 Feb 2024 02:00:19 GMT",
+      "sha256": "df4fc8cbc7c0efd40717adec258fcf0cdb61c8a80d4d6ba1e2a8681033bc9fd1",
+      "recordCount": 21,
+      "fetchedAt": "2026-09-04T16:30:43+09:00",
+      "parsedAt": "2026-09-04T16:30:43+09:00"
+    },
+    "3cee7da06b6f": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240122_kouriteika.pdf",
+      "etag": "\"a3e3-60f934f482040\"",
+      "lastModified": "Tue, 23 Jan 2024 02:00:25 GMT",
+      "sha256": "47d19bfea347d89759f316d845db66d3f045b12a986e20070f22dc224aa77b9c",
+      "recordCount": 19,
+      "fetchedAt": "2026-09-04T16:30:44+09:00",
+      "parsedAt": "2026-09-04T16:30:44+09:00"
+    },
+    "e018e3a3da79": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240118_kouriteikahenkou_2.pdf",
+      "etag": "\"933c-60f43dc9f819c\"",
+      "lastModified": "Fri, 19 Jan 2024 03:13:18 GMT",
+      "sha256": "a908d5fea716911a452f307b10d1aad12241dc1054adc6a22d17d302a2b3ca7b",
+      "recordCount": 1,
+      "fetchedAt": "2026-09-04T16:30:46+09:00",
+      "parsedAt": "2026-09-04T16:30:46+09:00"
+    },
+    "03ef1cededb7": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240118_kouriteikahenkou_1.pdf",
+      "etag": "\"d541-60f43dc9bfc96\"",
+      "lastModified": "Fri, 19 Jan 2024 03:13:18 GMT",
+      "sha256": "d3260a93250184d6ee78a2fa100a84d7fbf502b55a06b3ffc89acfa4febdd8f2",
+      "recordCount": 72,
+      "fetchedAt": "2026-09-04T16:30:47+09:00",
+      "parsedAt": "2026-09-04T16:30:47+09:00"
+    },
+    "8121116ba55d": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20240115_kouriteika.pdf",
+      "etag": "\"9ccc-60f067ddb2c00\"",
+      "lastModified": "Tue, 16 Jan 2024 02:00:16 GMT",
+      "sha256": "79741c12f8ed1a972023e668742ed0f74410dc9e286fda395a5bf296040422c0",
+      "recordCount": 16,
+      "fetchedAt": "2026-09-04T16:30:51+09:00",
+      "parsedAt": "2026-09-04T16:30:51+09:00"
+    },
+    "c2ad1ed21d4f": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20231222_kouriteika.pdf",
+      "etag": "\"9318-60d4bed95f500\"",
+      "lastModified": "Mon, 25 Dec 2023 02:00:20 GMT",
+      "sha256": "6c11bed95685dc74b136a77855a3e1fa552433834c5a2f172697f0e00d7cf521",
+      "recordCount": 22,
+      "fetchedAt": "2026-09-04T16:30:53+09:00",
+      "parsedAt": "2026-09-04T16:30:53+09:00"
+    },
+    "83a713e94e07": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20231221_kouriteika_2.pdf",
+      "etag": "\"7abb-60d0f942e5980\"",
+      "lastModified": "Fri, 22 Dec 2023 02:00:22 GMT",
+      "sha256": "0f535676099b5de276f0fceae97db64e8e0c41c2f03a2568bf269b840521f07d",
+      "recordCount": 1,
+      "fetchedAt": "2026-09-04T16:30:54+09:00",
+      "parsedAt": "2026-09-04T16:30:54+09:00"
+    },
+    "46a758245c44": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20231221_kouriteika.pdf",
+      "etag": "\"98eb-60d0f941f1740\"",
+      "lastModified": "Fri, 22 Dec 2023 02:00:21 GMT",
+      "sha256": "d813e09f78ca4e2fe78f349c1ca81227d0665ef07c9f6e5201b315e2f5dbb4fc",
+      "recordCount": 6,
+      "fetchedAt": "2026-09-04T16:30:55+09:00",
+      "parsedAt": "2026-09-04T16:30:55+09:00"
+    },
+    "0f6d3877dd58": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20231220_kouriteika.pdf",
+      "etag": "\"9034-60cfb7656f980\"",
+      "lastModified": "Thu, 21 Dec 2023 02:00:22 GMT",
+      "sha256": "1be51214406eecffafec6ca120c19e4471ef272e0901e0efef6590a4da88a627",
+      "recordCount": 19,
+      "fetchedAt": "2026-09-04T16:30:57+09:00",
+      "parsedAt": "2026-09-04T16:30:57+09:00"
+    },
+    "eeb9def40144": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20231207_kouriteika.pdf",
+      "etag": "\"7d2b-60bf5f2489500\"",
+      "lastModified": "Fri, 08 Dec 2023 02:00:20 GMT",
+      "sha256": "bf7a1b4455972cb2d0e68b7ee50cc32691f21719d54e21f881302c424f1c1dd2",
+      "recordCount": 3,
+      "fetchedAt": "2026-09-04T16:30:58+09:00",
+      "parsedAt": "2026-09-04T16:30:58+09:00"
+    },
+    "bfc232284404": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20231206_kouriteikahenkou.pdf",
+      "etag": "\"ba6b-60be1d4807740\"",
+      "lastModified": "Thu, 07 Dec 2023 02:00:21 GMT",
+      "sha256": "670fa0e798d24651eebf66313dd9dc7f3457aa2929e2be8a7c46e44fcc2f2430",
+      "recordCount": 18,
+      "fetchedAt": "2026-09-04T16:31:00+09:00",
+      "parsedAt": "2026-09-04T16:31:00+09:00"
+    },
+    "130670da02c2": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20231206_kouriteika.pdf",
+      "etag": "\"84aa-60be1d4807740\"",
+      "lastModified": "Thu, 07 Dec 2023 02:00:21 GMT",
+      "sha256": "2705e4875f4c0b487e3cbfdf300cdcd535831d781870b22f58e80e4837334f27",
+      "recordCount": 2,
+      "fetchedAt": "2026-09-04T16:31:01+09:00",
+      "parsedAt": "2026-09-04T16:31:01+09:00"
+    },
+    "9448ae3f3dc8": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20231205_kouriteika.pdf",
+      "etag": "\"914c-60bcdb66c0e40\"",
+      "lastModified": "Wed, 06 Dec 2023 02:00:17 GMT",
+      "sha256": "833bcf743ca34650f2a71326023c2d7870e78b2ee220feeaaf8012b66df82526",
+      "recordCount": 33,
+      "fetchedAt": "2026-09-04T16:31:03+09:00",
+      "parsedAt": "2026-09-04T16:31:03+09:00"
+    },
+    "d23e740e8e2c": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20231121_kouriteika.pdf",
+      "etag": "\"b42a-60ab414958c00\"",
+      "lastModified": "Wed, 22 Nov 2023 02:00:16 GMT",
+      "sha256": "7aa8765c0cc504f8adf4aaab18e2b2d87c1fa59213ee5358bd9fe04708867746",
+      "recordCount": 19,
+      "fetchedAt": "2026-09-04T16:31:04+09:00",
+      "parsedAt": "2026-09-04T16:31:04+09:00"
+    },
+    "6ed790f36317": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20231121_kouriteikahenkou.pdf",
+      "etag": "\"8c4c-60ab414958c00\"",
+      "lastModified": "Wed, 22 Nov 2023 02:00:16 GMT",
+      "sha256": "06b661b746d8f066322d68e13d8345801b8444ba71dee15c07bc9aa023158eda",
+      "recordCount": 1,
+      "fetchedAt": "2026-09-04T16:31:06+09:00",
+      "parsedAt": "2026-09-04T16:31:06+09:00"
+    },
+    "7458d112792d": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20231109_kouriteikahenkou.pdf",
+      "etag": "\"b5fa-609c2aec95740\"",
+      "lastModified": "Fri, 10 Nov 2023 02:00:21 GMT",
+      "sha256": "8e13aa6721c97b4711ec8e441dc50121e89ab4ca42d607aebe53382fe0b27013",
+      "recordCount": 24,
+      "fetchedAt": "2026-09-04T16:31:08+09:00",
+      "parsedAt": "2026-09-04T16:31:08+09:00"
+    },
+    "c73b2e6e9470": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20231102_kouriteika.pdf",
+      "etag": "\"992b-6097237010780\"",
+      "lastModified": "Mon, 06 Nov 2023 02:00:14 GMT",
+      "sha256": "31a176c5ccb75168ff1529b6bc1ed3f11f66408924b978ef26e4cad9459a0ef6",
+      "recordCount": 7,
+      "fetchedAt": "2026-09-04T16:31:09+09:00",
+      "parsedAt": "2026-09-04T16:31:09+09:00"
+    },
+    "02d8e90f65e2": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20231030_kouriteika.pdf",
+      "etag": "\"7e19-608f9844112c0\"",
+      "lastModified": "Tue, 31 Oct 2023 02:00:19 GMT",
+      "sha256": "84924494b4c1ddab06b51d60f6d79132f2490996d2a00d7dfeb8b05bf0d06cd4",
+      "recordCount": 1,
+      "fetchedAt": "2026-09-04T16:31:11+09:00",
+      "parsedAt": "2026-09-04T16:31:11+09:00"
+    },
+    "3eb406190599": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20231027_kouriteika.pdf",
+      "etag": "\"7d8b-608e5663bec00\"",
+      "lastModified": "Mon, 30 Oct 2023 02:00:16 GMT",
+      "sha256": "3b23e6fd1d0fa19516cd927ff13419af9f35c4033fb92c9df170edb45a030610",
+      "recordCount": 1,
+      "fetchedAt": "2026-09-04T16:31:12+09:00",
+      "parsedAt": "2026-09-04T16:31:12+09:00"
+    },
+    "bf3e53dc8003": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20231019_kouriteika.pdf",
+      "etag": "\"a82e-6081c3c3cfbc0\"",
+      "lastModified": "Fri, 20 Oct 2023 02:00:23 GMT",
+      "sha256": "61e6b1a84a56c8baabce072cd0b63cdab03d352fabfb0e9628b1493e1b6c8100",
+      "recordCount": 50,
+      "fetchedAt": "2026-09-04T16:31:13+09:00",
+      "parsedAt": "2026-09-04T16:31:13+09:00"
+    },
+    "b14137d8c2fe": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20231018_kouriteika.pdf",
+      "etag": "\"79dc-608081e659bc0\"",
+      "lastModified": "Thu, 19 Oct 2023 02:00:23 GMT",
+      "sha256": "eabc724ca162c5017181f3fe05d0bd17cee682dc1d0b72c52aeeb3ba80a0f856",
+      "recordCount": 1,
+      "fetchedAt": "2026-09-04T16:31:16+09:00",
+      "parsedAt": "2026-09-04T16:31:16+09:00"
+    },
+    "c242d64fd556": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20231016_kouriteika.pdf",
+      "etag": "\"a686-607dfe279d2c0\"",
+      "lastModified": "Tue, 17 Oct 2023 02:00:19 GMT",
+      "sha256": "b70dd70b501bcde3abff9dfe0c7bd6f9ea25b9467426dc753ef6f699376c43c2",
+      "recordCount": 20,
+      "fetchedAt": "2026-09-04T16:31:16+09:00",
+      "parsedAt": "2026-09-04T16:31:16+09:00"
+    },
+    "5530962f6470": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/20231010_kouriteika.pdf",
+      "etag": "\"8407-607672f7cd500\"",
+      "lastModified": "Wed, 11 Oct 2023 02:00:20 GMT",
+      "sha256": "e2f20fb0716590bee080f3d2b96a39f3025c00788d2ffa615cd1581410bc61e5",
+      "recordCount": 5,
+      "fetchedAt": "2026-09-04T16:31:18+09:00",
+      "parsedAt": "2026-09-04T16:31:18+09:00"
+    },
+    "550dca96b7ed": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20231006_kouriteika.pdf",
+      "etag": "\"77db-6075311a57500\"",
+      "lastModified": "Tue, 10 Oct 2023 02:00:20 GMT",
+      "sha256": "d0e79b2b7c2757297b8e77f344c15a56da649a41953fb86f3ec51bc8896f9bea",
+      "recordCount": 1,
+      "fetchedAt": "2026-09-04T16:31:19+09:00",
+      "parsedAt": "2026-09-04T16:31:19+09:00"
+    },
+    "d18fa8b45f5c": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20231002_kouriteika.pdf",
+      "etag": "\"15ecf-606c640d11740\"",
+      "lastModified": "Tue, 03 Oct 2023 02:00:21 GMT",
+      "sha256": "65debd26c76012492fe81535a537c2c2269fbd85496fa3a54a7a9cc5d47b4608",
+      "recordCount": 1,
+      "fetchedAt": "2026-09-04T16:31:21+09:00",
+      "parsedAt": "2026-09-04T16:31:21+09:00"
+    },
+    "a1df038168a7": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20230929_kouriteika.pdf",
+      "etag": "\"99cd-606b223277e00\"",
+      "lastModified": "Mon, 02 Oct 2023 02:00:24 GMT",
+      "sha256": "8f45c6069012828aab40ab33d84efa9e50828a44182bc3f8d8c2ec8254845a9e",
+      "recordCount": 6,
+      "fetchedAt": "2026-09-04T16:31:22+09:00",
+      "parsedAt": "2026-09-04T16:31:22+09:00"
+    },
+    "6a34b17235ee": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20230915_kouriteika.pdf",
+      "etag": "\"a46d-605aca11fe600\"",
+      "lastModified": "Tue, 19 Sep 2023 02:00:56 GMT",
+      "sha256": "9dc62e89e44cb0818c4e5aff72a2e0fe58a718c76c3e05a1e57abded3fb69dd8",
+      "recordCount": 12,
+      "fetchedAt": "2026-09-04T16:31:24+09:00",
+      "parsedAt": "2026-09-04T16:31:24+09:00"
+    },
+    "a716a5df49ab": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20230908_kouriteikahenkou.pdf",
+      "etag": "\"ad6a-6050bb03f9500\"",
+      "lastModified": "Mon, 11 Sep 2023 02:00:20 GMT",
+      "sha256": "96321f1af45a067501c4b4f871ab4ee5c79d16ad563462f515bb3d11ffc7ce2a",
+      "recordCount": 37,
+      "fetchedAt": "2026-09-04T16:31:25+09:00",
+      "parsedAt": "2026-09-04T16:31:25+09:00"
+    },
+    "df6c80dd4050": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20230908_kouriteika.pdf",
+      "etag": "\"9f59-6050bb03f9500\"",
+      "lastModified": "Mon, 11 Sep 2023 02:00:20 GMT",
+      "sha256": "aaa694dd6e5e2988b34640ed54d551d6afb13cd4e8a8be1a25aa2a0bf7f9a5dc",
+      "recordCount": 19,
+      "fetchedAt": "2026-09-04T16:31:27+09:00",
+      "parsedAt": "2026-09-04T16:31:27+09:00"
+    },
+    "83ada5022bb2": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20230905_kouriteika.pdf",
+      "etag": "\"b79e-604a71b7584c0\"",
+      "lastModified": "Wed, 06 Sep 2023 02:00:27 GMT",
+      "sha256": "d7e17eef06753b250471cc09d396f1a62c842a87b51f6767f7df1918c9c0d5de",
+      "recordCount": 45,
+      "fetchedAt": "2026-09-04T16:31:28+09:00",
+      "parsedAt": "2026-09-04T16:31:28+09:00"
+    },
+    "4dd548b3a3a5": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20230901_kouriteikahenkou.pdf",
+      "etag": "\"a958-6047edf2e2e40\"",
+      "lastModified": "Mon, 04 Sep 2023 02:00:17 GMT",
+      "sha256": "8fdfd5aa43f2231a8c9e9acaeb723f8707ebcb2f1afd7a2aafde4d158b91f7df",
+      "recordCount": 14,
+      "fetchedAt": "2026-09-04T16:31:30+09:00",
+      "parsedAt": "2026-09-04T16:31:30+09:00"
+    },
+    "a0ab539084f3": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20230901_kouriteika1.pdf",
+      "etag": "\"864a-6047edf2e2e40\"",
+      "lastModified": "Mon, 04 Sep 2023 02:00:17 GMT",
+      "sha256": "7713bf054d1f228dfcdc1bf6af2953bd9e8be9b8e34de83555fe7aebdac91032",
+      "recordCount": 2,
+      "fetchedAt": "2026-09-04T16:31:32+09:00",
+      "parsedAt": "2026-09-04T16:31:32+09:00"
+    },
+    "7db5ae40b115": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20230901_kouriteika2.pdf",
+      "etag": "\"d200-6047edf1eec00\"",
+      "lastModified": "Mon, 04 Sep 2023 02:00:16 GMT",
+      "sha256": "28a60e5d56ddf323a4e2efd505fc517cfc485cadaa4da7ab3016f021ff1aa1c4",
+      "recordCount": 58,
+      "fetchedAt": "2026-09-04T16:31:33+09:00",
+      "parsedAt": "2026-09-04T16:31:33+09:00"
+    },
+    "ec06837ecf7a": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20230824_kouriteika.pdf",
+      "etag": "\"815b-603b5b4c46e40\"",
+      "lastModified": "Fri, 25 Aug 2023 02:00:17 GMT",
+      "sha256": "b1abe1dfb2a2a3b5f679e19fc9fc426435879d50df553dc1af82c233d5e103f9",
+      "recordCount": 4,
+      "fetchedAt": "2026-09-04T16:31:34+09:00",
+      "parsedAt": "2026-09-04T16:31:34+09:00"
+    },
+    "e3ae6e56a68e": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20230823_kouriteika.pdf",
+      "etag": "\"7c56-603a196fc5080\"",
+      "lastModified": "Thu, 24 Aug 2023 02:00:18 GMT",
+      "sha256": "cca282bbfba161690d69b9ce81e04649832211e48c868a8c387d348b5990f52b",
+      "recordCount": 2,
+      "fetchedAt": "2026-09-04T16:31:36+09:00",
+      "parsedAt": "2026-09-04T16:31:36+09:00"
+    },
+    "0052090834d2": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20230822_kouriteika.pdf",
+      "etag": "\"7e7a-6038d7b780840\"",
+      "lastModified": "Wed, 23 Aug 2023 02:00:57 GMT",
+      "sha256": "7bbe7a7b6aca74386ef9be596b1dac55221aaf8650a911b69b01a2443d4edf03",
+      "recordCount": 1,
+      "fetchedAt": "2026-09-04T16:31:37+09:00",
+      "parsedAt": "2026-09-04T16:31:37+09:00"
+    },
+    "8c7909b17c3c": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20230821_kouriteika.pdf",
+      "etag": "\"8dcc-603795d8223c0\"",
+      "lastModified": "Tue, 22 Aug 2023 02:00:55 GMT",
+      "sha256": "8783bd63f879a3a048a0d1441f33d9dc2671eda68950fff204e06de03f3107f0",
+      "recordCount": 2,
+      "fetchedAt": "2026-09-04T16:31:39+09:00",
+      "parsedAt": "2026-09-04T16:31:39+09:00"
+    },
+    "66e59681766f": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20230809_kouriteika.pdf",
+      "etag": "\"81ea-60287f525ce40\"",
+      "lastModified": "Thu, 10 Aug 2023 02:00:17 GMT",
+      "sha256": "4333f9d4daa69d715a0019889108a9bf404334a9c57151c33a14c4b7f73e5b97",
+      "recordCount": 3,
+      "fetchedAt": "2026-09-04T16:31:40+09:00",
+      "parsedAt": "2026-09-04T16:31:40+09:00"
+    },
+    "ba818019d499": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20230807_kouriteikahenkou.pdf",
+      "etag": "\"abd8-6025fb9c35980\"",
+      "lastModified": "Tue, 08 Aug 2023 02:00:22 GMT",
+      "sha256": "7f06bebe08f92bcb597a07e84853058ff5904c86ef207e6386bc44094fd19473",
+      "recordCount": 11,
+      "fetchedAt": "2026-09-04T16:31:43+09:00",
+      "parsedAt": "2026-09-04T16:31:43+09:00"
+    },
+    "e64ebb07052a": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20230801_kouriteika.pdf",
+      "etag": "\"13811-601e7066ace40\"",
+      "lastModified": "Wed, 02 Aug 2023 02:00:17 GMT",
+      "sha256": "d810febf2b2eacb2bbbd2d09781c1dea619aabc75ec5683854713c06e21d7aa7",
+      "recordCount": 127,
+      "fetchedAt": "2026-09-04T16:31:44+09:00",
+      "parsedAt": "2026-09-04T16:31:44+09:00"
+    },
+    "1f8b4ea7fbc4": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20230727_kouriteika.pdf",
+      "etag": "\"136a8-60182715472c0\"",
+      "lastModified": "Fri, 28 Jul 2023 02:00:19 GMT",
+      "sha256": "af90e99bed157e039142fcf2731ed8ab48f43eff0fdff2e0244c4c0407a678bf",
+      "recordCount": 1,
+      "fetchedAt": "2026-09-04T16:31:45+09:00",
+      "parsedAt": "2026-09-04T16:31:45+09:00"
+    },
+    "17740bd5aaea": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20230724_kouriteika.pdf",
+      "etag": "\"8ed5-60146180b5bc0\"",
+      "lastModified": "Tue, 25 Jul 2023 02:00:23 GMT",
+      "sha256": "4389f473c68f93ff577f4210f6f195a16631db482e82b9d86823d8d5ca13d236",
+      "recordCount": 2,
+      "fetchedAt": "2026-09-04T16:31:46+09:00",
+      "parsedAt": "2026-09-04T16:31:46+09:00"
+    },
+    "5539b7423451": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20230703_kouriteikahenkou.pdf",
+      "etag": "\"a199-5ff9fa541f740\"",
+      "lastModified": "Tue, 04 Jul 2023 02:00:21 GMT",
+      "sha256": "00b81887e1ddd3df09ee6a79a00770b4f000c93df2d40cbea2c83f09692d8dac",
+      "recordCount": 19,
+      "fetchedAt": "2026-09-04T16:31:49+09:00",
+      "parsedAt": "2026-09-04T16:31:49+09:00"
+    },
+    "8028d0b318a0": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20230623_kouriteika.pdf",
+      "etag": "\"af34-5fefeb686f740\"",
+      "lastModified": "Mon, 26 Jun 2023 02:00:21 GMT",
+      "sha256": "8dcd50a2145c5e8a2fb6e44271b082a98eba1c745b8b652dac86dcba2134125d",
+      "recordCount": 41,
+      "fetchedAt": "2026-09-04T16:31:49+09:00",
+      "parsedAt": "2026-09-04T16:31:49+09:00"
+    },
+    "5fe9ca574a56": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20230616_kouriteikahenkou.pdf",
+      "etag": "\"ab6a-5fe71e584d2c0\"",
+      "lastModified": "Mon, 19 Jun 2023 02:00:19 GMT",
+      "sha256": "2d9af5b8f12a51e8f00b9a533ac8300a58a999ba05c457f3ae1f680ca695cbf4",
+      "recordCount": 34,
+      "fetchedAt": "2026-09-04T16:31:51+09:00",
+      "parsedAt": "2026-09-04T16:31:51+09:00"
+    },
+    "322b46322118": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20230612_kouriteika.pdf",
+      "etag": "\"9fda-5fdf9323b89c0\"",
+      "lastModified": "Tue, 13 Jun 2023 02:00:15 GMT",
+      "sha256": "aacb548258a8f757fe3b15e4bb9682fad9f265d5e51fc7ff0bb7e150746df6a0",
+      "recordCount": 17,
+      "fetchedAt": "2026-09-04T16:31:52+09:00",
+      "parsedAt": "2026-09-04T16:31:52+09:00"
+    },
+    "a95749cb8f47": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20230608_kouriteika.pdf",
+      "etag": "\"9e99-5fda8bb1b12c0\"",
+      "lastModified": "Fri, 09 Jun 2023 02:00:19 GMT",
+      "sha256": "8ede6b3b1cdee663ed3a5d79bbcb8d845e3313c349dc68adfe15866577550264",
+      "recordCount": 19,
+      "fetchedAt": "2026-09-04T16:31:54+09:00",
+      "parsedAt": "2026-09-04T16:31:54+09:00"
+    },
+    "f5c0c0c3c8a7": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20230607_kouriteika.pdf",
+      "etag": "\"833d-5fd949d347080\"",
+      "lastModified": "Thu, 08 Jun 2023 02:00:18 GMT",
+      "sha256": "e08b2792b729b16924ccd4bd2a09fc3701ab912a174857ca58b2d6bdc9b73c44",
+      "recordCount": 2,
+      "fetchedAt": "2026-09-04T16:31:55+09:00",
+      "parsedAt": "2026-09-04T16:31:55+09:00"
+    },
+    "e5ec8c8a746d": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20230530_kouriteika.pdf",
+      "etag": "\"a78a-5fcf3ae5aec00\"",
+      "lastModified": "Wed, 31 May 2023 02:00:16 GMT",
+      "sha256": "2db67c3481a48f7add4f005f075d5e216291392b6f6a3a6c455d1754afb11478",
+      "recordCount": 19,
+      "fetchedAt": "2026-09-04T16:31:57+09:00",
+      "parsedAt": "2026-09-04T16:31:57+09:00"
+    },
+    "29b1d7d6e54c": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20230524_kouriteikahenkou.pdf",
+      "etag": "\"a8f1-5fc7afb9af740\"",
+      "lastModified": "Thu, 25 May 2023 02:00:21 GMT",
+      "sha256": "1daa1e39a08577a63be278e64768977966fb7cb3f0073d3eaeed325904a40923",
+      "recordCount": 55,
+      "fetchedAt": "2026-09-04T16:31:58+09:00",
+      "parsedAt": "2026-09-04T16:31:58+09:00"
+    },
+    "de37835ec1ce": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20230519_kouriteika.pdf",
+      "etag": "\"937b-5fc3ea2241980\"",
+      "lastModified": "Mon, 22 May 2023 02:00:22 GMT",
+      "sha256": "c260a360b831773fbbe36355bf5762867998d88bbeaa822da42df6a3a1680c96",
+      "recordCount": 6,
+      "fetchedAt": "2026-09-04T16:32:00+09:00",
+      "parsedAt": "2026-09-04T16:32:00+09:00"
+    },
+    "2c5400c88088": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20230512_kouriteika.pdf",
+      "etag": "\"ae08-5fbb1d112b2c0\"",
+      "lastModified": "Mon, 15 May 2023 02:00:19 GMT",
+      "sha256": "25a85416423cfa954bc82084ef579a0296aa4320c62c49b6bf0a6f93176b471f",
+      "recordCount": 32,
+      "fetchedAt": "2026-09-04T16:32:04+09:00",
+      "parsedAt": "2026-09-04T16:32:04+09:00"
+    },
+    "42fab0317888": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20230424_kouriteika.pdf",
+      "etag": "\"aaac-5fa1f7c20ae40\"",
+      "lastModified": "Tue, 25 Apr 2023 02:00:17 GMT",
+      "sha256": "554e49c050c298875596451b9387f46f4b0f5b9a6972988b5748a15636ab0b4e",
+      "recordCount": 43,
+      "fetchedAt": "2026-09-04T16:32:05+09:00",
+      "parsedAt": "2026-09-04T16:32:05+09:00"
+    },
+    "ad1c2bdedbed": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20230419_kouriteika.pdf",
+      "etag": "\"811b-5f9bae6fb1080\"",
+      "lastModified": "Thu, 20 Apr 2023 02:00:18 GMT",
+      "sha256": "297798690b40b9e2696774f306c533ed71df3bca56c906774d0b14a64cf5185d",
+      "recordCount": 1,
+      "fetchedAt": "2026-09-04T16:32:06+09:00",
+      "parsedAt": "2026-09-04T16:32:06+09:00"
+    },
+    "32b5a0f3fc6d": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20230410_kouriteika.pdf",
+      "etag": "\"b109-5f905da967740\"",
+      "lastModified": "Tue, 11 Apr 2023 02:00:21 GMT",
+      "sha256": "8061db1ed23152def7ee990418b7039976fc45a76bfd550a860dc6e603c7f6b3",
+      "recordCount": 42,
+      "fetchedAt": "2026-09-04T16:32:08+09:00",
+      "parsedAt": "2026-09-04T16:32:08+09:00"
+    }
+  },
+  "index": {
+    "etag": "\"11099-65a11d0c85e00\"",
+    "lastModified": "Fri, 28 Aug 2026 02:00:24 GMT"
+  },
+  "lastRunAt": "2026-09-04T16:32:08+09:00"
+}
