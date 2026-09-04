@@ -2,8 +2,8 @@
  * 製造たばこ小売定価 統合データ — スプレッドシート側の取り込みスクリプト
  *
  * Google Cloud のサービスアカウントを一切使わずにシートを更新するための方式。
- * このスクリプトはシートの所有者（あなた）の権限で動くので、
- * Google 側の認証情報は不要。必要なのは GitHub の読み取りトークンだけ。
+ * このスクリプトはシートの所有者（あなた）の権限で動くので、Google 側の認証情報は不要。
+ * リポジトリが public なら GitHub 側の資格情報も不要（raw.githubusercontent.com から取得）。
  *
  *   GitHub Actions  … 財務省サイトの巡回・PDF解析・CSV生成（Google認証なし）
  *   Apps Script     … 生成されたCSVを取りに行ってシートに書く（GCPなし）
@@ -15,8 +15,8 @@
 var PROP = {
   repo: 'GITHUB_REPO', // 例: MasanoriKatsuragawa/Tobacco-prices
   ref: 'GITHUB_REF', // 例: main
-  token: 'GITHUB_TOKEN', // fine-grained PAT（Contents: Read-only）。公開リポジトリなら不要
-  lastSha: 'LAST_SYNCED_SHA', // 前回取り込んだCSVのblob SHA（スクリプトが自動で書く）
+  token: 'GITHUB_TOKEN', // fine-grained PAT（Contents: Read-only）。public リポジトリでは設定しないこと
+  lastDigest: 'LAST_SYNCED_DIGEST', // 前回取り込んだCSVのハッシュ（スクリプトが自動で書く）
 };
 
 var PATHS = {
@@ -77,9 +77,9 @@ function sync_(force) {
   var repo = required_(props, PROP.repo);
   var ref = props.getProperty(PROP.ref) || 'main';
 
-  var csvFile = fetchGitHubFile_(repo, PATHS.csv, ref);
+  var csvFile = fetchFile_(repo, PATHS.csv, ref);
 
-  if (!force && csvFile.sha === props.getProperty(PROP.lastSha)) {
+  if (!force && csvFile.digest === props.getProperty(PROP.lastDigest)) {
     log_('前回から変更がないため、書き込みをスキップしました。');
     return;
   }
@@ -91,7 +91,7 @@ function sync_(force) {
 
   var approvals = [];
   try {
-    approvals = JSON.parse(fetchGitHubFile_(repo, PATHS.approvals, ref).content);
+    approvals = JSON.parse(fetchFile_(repo, PATHS.approvals, ref).content);
   } catch (e) {
     // 認可一覧は補助情報。取れなくても定価一覧の更新は続ける。
     log_('認可一覧を取得できませんでした: ' + e);
@@ -108,53 +108,127 @@ function sync_(force) {
   formatTab_(spreadsheet.getSheetByName(TABS.approvals));
   removeEmptyDefaultTab_(spreadsheet);
 
-  props.setProperty(PROP.lastSha, csvFile.sha);
+  props.setProperty(PROP.lastDigest, csvFile.digest);
   log_(TABS.prices + ' に ' + (rows.length - 1) + ' 行を書き込みました。');
 }
 
 /**
- * GitHub Contents API でファイルを1つ取得する。
- * private リポジトリの場合は Contents: Read-only の fine-grained PAT が要る。
+ * ファイルを1つ取得する。
+ *
+ * public リポジトリでは raw.githubusercontent.com を使う。
+ * REST API（api.github.com）は未認証だと **IPあたり60回/時** に制限されるが、
+ * Apps Script の通信は Google 共有IPから出るため、この枠は自分が使っていなくても
+ * 他の利用者によって使い切られていることがある（403 rate limit exceeded の正体）。
+ * raw は CDN 配信でこの枠の対象外なので、認証なしでも安定して読める。
+ *
+ * トークンが設定されている場合（private リポジトリ）は REST API を使う。
  */
-function fetchGitHubFile_(repo, path, ref) {
+function fetchFile_(repo, path, ref) {
+  var token = PropertiesService.getScriptProperties().getProperty(PROP.token);
+  return token ? fetchViaApi_(repo, path, ref, token) : fetchViaRaw_(repo, path, ref);
+}
+
+/** public リポジトリ用。CDNから素のファイルを取る（認証・APIレート制限なし）。 */
+function fetchViaRaw_(repo, path, ref) {
+  var url = 'https://raw.githubusercontent.com/' + repo + '/' + encodeURIComponent(ref) + '/' + encodeURI(path);
+  var response = fetchWithRetry_(url, { muteHttpExceptions: true, followRedirects: true });
+  var status = response.getResponseCode();
+
+  if (status === 404) {
+    throw new Error(
+      'ファイルが見つかりません (404): ' + path + '\n' +
+        '・まだGitHub Actionsの update ジョブが一度も成功していない可能性があります。\n' +
+        '  Actions タブで「たばこ小売定価データの更新」を Run workflow して data/ を生成してください。\n' +
+        '  （push だけではテストしか走らず、データは作られません）\n' +
+        '・リポジトリ名・ブランチ名の綴りも確認してください。\n' +
+        '・private リポジトリの場合はスクリプトプロパティ ' + PROP.token + ' が必要です。\n' +
+        'URL: ' + url,
+    );
+  }
+  if (status !== 200) {
+    throw new Error('取得に失敗しました (' + status + '): ' + url + '\n' + response.getContentText().slice(0, 300));
+  }
+
+  var content = response.getBlob().getDataAsString('UTF-8');
+  return { content: content, digest: digest_(content) };
+}
+
+/** private リポジトリ用。Contents API をトークン付きで叩く。 */
+function fetchViaApi_(repo, path, ref, token) {
   var url =
     'https://api.github.com/repos/' + repo + '/contents/' + encodeURI(path) + '?ref=' + encodeURIComponent(ref);
 
-  var headers = {
-    Accept: 'application/vnd.github+json',
-    'X-GitHub-Api-Version': '2022-11-28',
-  };
-  var token = PropertiesService.getScriptProperties().getProperty(PROP.token);
-  if (token) headers.Authorization = 'Bearer ' + token;
-
-  var response = UrlFetchApp.fetch(url, {
-    headers: headers,
+  var response = fetchWithRetry_(url, {
+    headers: {
+      Accept: 'application/vnd.github+json',
+      'X-GitHub-Api-Version': '2022-11-28',
+      Authorization: 'Bearer ' + token,
+    },
     muteHttpExceptions: true,
     followRedirects: true,
   });
 
   var status = response.getResponseCode();
-  if (status === 404) {
-    throw new Error(
-      'ファイルが見つかりません (404): ' + path + '\n' +
-        'リポジトリ名・ブランチ名と、トークンに Contents: Read-only の権限があるかを確認してください。',
+  if (status === 200) {
+    var body = JSON.parse(response.getContentText());
+    if (!body.content) throw new Error('APIの応答にファイル内容が含まれていません: ' + path);
+    // content は base64。UTF-8として復元する（日本語が含まれるので必須）。
+    var text = Utilities.newBlob(Utilities.base64Decode(body.content.replace(/\n/g, ''))).getDataAsString('UTF-8');
+    return { content: text, digest: body.sha };
+  }
+
+  throw new Error(describeApiError_(status, response, path));
+}
+
+/** 403 の原因（レート制限 / 権限不足）を切り分けたメッセージを作る。 */
+function describeApiError_(status, response, path) {
+  var headers = response.getAllHeaders();
+  var remaining = headers['x-ratelimit-remaining'] || headers['X-RateLimit-Remaining'];
+  var body = response.getContentText().slice(0, 300);
+
+  if (status === 403 && String(remaining) === '0') {
+    var reset = headers['x-ratelimit-reset'] || headers['X-RateLimit-Reset'];
+    var resetText = reset ? new Date(Number(reset) * 1000).toLocaleString('ja-JP') : '不明';
+    return (
+      'GitHub APIのレート制限に達しました (403)。回復予定: ' + resetText + '\n' +
+      'リポジトリが public なら ' + PROP.token + ' を空にしてください。' +
+      'raw.githubusercontent.com 経由に切り替わり、この制限を受けなくなります。\n' + body
     );
   }
   if (status === 401 || status === 403) {
-    throw new Error('GitHubの認証に失敗しました (' + status + ')。トークンの有効期限と権限を確認してください。');
+    return (
+      'GitHubへのアクセスを拒否されました (' + status + ')。\n' +
+      '・リポジトリが public なら ' + PROP.token + ' を削除してください（トークン不要です）\n' +
+      '・private なら、そのトークンが対象リポジトリに対する Contents: Read-only を持つか、\n' +
+      '  有効期限が切れていないかを確認してください\n' + body
+    );
   }
-  if (status !== 200) {
-    throw new Error('GitHub APIがエラーを返しました (' + status + '): ' + response.getContentText().slice(0, 200));
+  if (status === 404) {
+    return 'ファイルが見つかりません (404): ' + path + '\nリポジトリ名・ブランチ名・トークンの権限を確認してください。\n' + body;
   }
+  return 'GitHub APIがエラーを返しました (' + status + '): ' + body;
+}
 
-  var body = JSON.parse(response.getContentText());
-  if (!body.content) {
-    throw new Error('APIの応答にファイル内容が含まれていません: ' + path);
+/** 一時的な失敗（5xx / 429）だけ指数バックオフで再試行する。 */
+function fetchWithRetry_(url, options) {
+  var response = null;
+  for (var attempt = 0; attempt < 3; attempt++) {
+    if (attempt > 0) Utilities.sleep(2000 * Math.pow(2, attempt - 1));
+    response = UrlFetchApp.fetch(url, options);
+    var status = response.getResponseCode();
+    if (status < 500 && status !== 429) return response;
   }
+  return response;
+}
 
-  // content は base64。UTF-8として復元する（日本語が含まれるので必須）。
-  var bytes = Utilities.base64Decode(body.content.replace(/\n/g, ''));
-  return { content: Utilities.newBlob(bytes).getDataAsString('UTF-8'), sha: body.sha };
+/** 内容から変更検知用のハッシュを作る。 */
+function digest_(text) {
+  var bytes = Utilities.computeDigest(Utilities.DigestAlgorithm.SHA_256, text, Utilities.Charset.UTF_8);
+  var hex = '';
+  for (var i = 0; i < bytes.length; i++) {
+    hex += ('0' + (bytes[i] & 0xff).toString(16)).slice(-2);
+  }
+  return hex;
 }
 
 /** BOM を落としてから CSV を配列に変換する。 */
