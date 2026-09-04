@@ -1,0 +1,28 @@
+{
+  "name": "tobacco-prices",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "財務省「製造たばこの小売定価の認可」PDFを統合し、公開用Googleスプレッドシートへ同期する",
+  "scripts": {
+    "crawl": "tsx src/cli.ts crawl",
+    "parse": "tsx src/cli.ts parse",
+    "build-dataset": "tsx src/cli.ts build-dataset",
+    "sync": "tsx src/cli.ts sync",
+    "inspect": "tsx src/cli.ts inspect",
+    "update": "tsx src/cli.ts update",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "google-auth-library": "^10.4.0",
+    "node-html-parser": "^7.0.1",
+    "pdfjs-dist": "^5.4.149"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.9",
+    "tsx": "^4.22.4",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.8"
+  }
+}

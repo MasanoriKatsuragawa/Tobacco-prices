@@ -1,0 +1,140 @@
+name: たばこ小売定価データの更新
+
+on:
+  schedule:
+    # 毎日 06:15 JST（UTC 21:15）。財務省の公表は平日日中なので朝に拾えれば十分。
+    - cron: "15 21 * * *"
+  workflow_dispatch:
+    inputs:
+      full:
+        description: "既知のPDFも含めて全件を取り直して再解析する"
+        type: boolean
+        default: false
+      force_sync:
+        description: "データに変化が無くてもスプレッドシートへ書き込む"
+        type: boolean
+        default: false
+  pull_request:
+  push:
+    # 自動コミットされる data/ の変更ではテストを回さない（[skip ci] の保険）
+    paths-ignore:
+      - "data/**"
+
+# 同時実行するとデータのコミットが競合するので直列化する
+concurrency:
+  group: tobacco-prices-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  test:
+    name: テスト
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: package-lock.json
+
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
+
+  update:
+    name: 取得・解析・同期
+    # スケジュール実行と手動実行のときだけ。PR ではデータを更新しない。
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    needs: test
+    runs-on: ubuntu-latest
+    permissions:
+      # data/ の更新をコミットするため
+      contents: write
+      # Workload Identity 連携でGoogleに認証するため（鍵なし方式）
+      id-token: write
+    env:
+      # ジョブレベルに置くことで、後続ステップの if 条件から参照できる。
+      # 未設定ならスプレッドシート同期を丸ごとスキップする（取得と解析だけ動く）。
+      # Apps Script 方式（README 4.2 A）ではこれが正しい状態。
+      SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}
+      # 鍵JSON方式（README 4.2 C）を使う場合のみ設定する。
+      # 未設定なら sync は ADC にフォールバックする。
+      GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+      GCP_WORKLOAD_IDENTITY_PROVIDER: ${{ secrets.GCP_WORKLOAD_IDENTITY_PROVIDER }}
+      DATASET_REPO_URL: ${{ github.server_url }}/${{ github.repository }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: package-lock.json
+
+      - run: npm ci
+
+      # 取得済みPDFを持ち越して、財務省サイトへの再ダウンロードを避ける
+      - name: PDFキャッシュを復元
+        uses: actions/cache@v4
+        with:
+          path: .cache/pdf
+          key: tobacco-pdf-${{ github.run_id }}
+          restore-keys: tobacco-pdf-
+
+      - name: 新規PDFを取得して解析
+        id: update
+        run: npm run update -- ${{ inputs.full && '--full' || '' }}
+
+      # 鍵を作らずにGoogleへ認証する方式。GCP_WORKLOAD_IDENTITY_PROVIDER を
+      # 登録したときだけ動き、ADC（GOOGLE_APPLICATION_CREDENTIALS）を用意する。
+      - name: Google認証（Workload Identity 連携）
+        if: env.SPREADSHEET_ID != '' && env.GCP_WORKLOAD_IDENTITY_PROVIDER != ''
+        uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: ${{ secrets.GCP_WORKLOAD_IDENTITY_PROVIDER }}
+          service_account: ${{ secrets.GCP_SERVICE_ACCOUNT }}
+
+      - name: スプレッドシートへ同期
+        if: env.SPREADSHEET_ID != ''
+        run: npm run sync -- ${{ inputs.force_sync && '--force' || '' }}
+
+      - name: データの更新をコミット
+        run: |
+          if [ -z "$(git status --porcelain data)" ]; then
+            echo "更新はありません。"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          git commit -m "データ更新: たばこ小売定価 (${{ steps.update.outputs.total_records }} 件) [skip ci]"
+          for attempt in 1 2 3 4; do
+            if git push; then exit 0; fi
+            echo "push に失敗しました。$((2 ** attempt)) 秒後に再試行します。"
+            sleep $((2 ** attempt))
+            git pull --rebase
+          done
+          exit 1
+
+      - name: 解析できなかった行をアーティファクトに残す
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: unparsed-lines
+          path: data/unparsed.json
+          if-no-files-found: ignore
+
+      - name: 実行サマリ
+        if: always()
+        run: |
+          {
+            echo "### たばこ小売定価データ"
+            echo ""
+            echo "- レコード合計: ${{ steps.update.outputs.total_records }}"
+            echo "- 増分: ${{ steps.update.outputs.new_records }}"
+            echo "- 今回取得したPDF: ${{ steps.update.outputs.new_pdfs }}"
+            echo "- データ変化: ${{ steps.update.outputs.changed }}"
+          } >> "$GITHUB_STEP_SUMMARY"
