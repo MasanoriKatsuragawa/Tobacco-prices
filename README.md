@@ -5,8 +5,22 @@
 **1つの表（Googleスプレッドシート／CSV）**に統合し、以後は自動で追記していくためのツールです。
 
 - 出典ページ: https://www.mof.go.jp/policy/tab_salt/topics/kouriteika.html
-- 生成物（このリポジトリ内）: [`data/tobacco-retail-prices.csv`](data/tobacco-retail-prices.csv)
+- 生成物: [`data/tobacco-retail-prices.csv`](data/tobacco-retail-prices.csv)
 - 公開先: Googleスプレッドシート（一般公開・閲覧のみ）
+
+### データの入手方法
+
+スプレッドシートを開かなくても、CSV / JSON を直接取得できます。
+
+```bash
+# 定価一覧（CSV, UTF-8 BOM付き）
+curl -LO https://raw.githubusercontent.com/MasanoriKatsuragawa/Tobacco-prices/main/data/tobacco-retail-prices.csv
+
+# 認可PDFの一覧（JSON）
+curl -LO https://raw.githubusercontent.com/MasanoriKatsuragawa/Tobacco-prices/main/data/approvals.json
+```
+
+更新の履歴はコミットログがそのまま差分になっています（`git log -p data/`）。
 
 ---
 
@@ -232,7 +246,16 @@ npm run update -- --full
 
 ## 8. ライセンス・利用について
 
+**コード**（`src/`, `apps-script/`, `tests/`, ワークフロー）は
+[MIT License](LICENSE) です。
+
+**データ**（`data/` 配下、およびGoogleスプレッドシートの内容）は、
+財務省が公表した資料を機械的に読み取った**非公式の二次データ**です。
 出典である財務省ウェブサイトのコンテンツは
 [政府標準利用規約](https://www.mof.go.jp/index.htm)に基づいて利用しています。
-本ツールが生成する二次データも同様に自由に利用できますが、利用の際は出典として
-財務省の当該ページを併記してください。**本データは財務省が作成・公表したものではありません。**
+再配布・再利用の際は、次のように出典を併記してください。
+
+> 出典: 財務省「製造たばこの小売定価の認可」
+> https://www.mof.go.jp/policy/tab_salt/topics/kouriteika.html
+> （本データは上記PDFを機械的に統合した非公式の二次データであり、
+> 財務省が作成・公表したものではありません）

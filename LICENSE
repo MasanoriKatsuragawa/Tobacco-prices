@@ -1,0 +1,42 @@
+MIT License
+
+Copyright (c) 2026 Masanori Katsuragawa
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+NOTE ON DATA / データについて
+
+This license covers the source code in this repository.
+
+The contents of `data/` are a machine-extracted, unofficial derivative of
+material published by the Ministry of Finance, Japan:
+
+    財務省「製造たばこの小売定価の認可」
+    https://www.mof.go.jp/policy/tab_salt/topics/kouriteika.html
+
+That source material is used under the Japanese Government's Standard Terms of
+Use (政府標準利用規約). When redistributing the data, please cite the Ministry
+of Finance page above as the source, and note that this dataset is not created
+or published by the Ministry of Finance.
+
+`data/` の内容は、上記の財務省公表資料を機械的に読み取った非公式の二次データ
+です。政府標準利用規約に基づき利用しています。再配布の際は出典として上記ページ
+を併記し、財務省が作成・公表したものではない旨を明示してください。

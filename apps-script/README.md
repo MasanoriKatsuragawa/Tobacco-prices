@@ -26,10 +26,13 @@ Drive全体へのアクセス権は要求しません。
 
 ## セットアップ
 
-### 1. GitHub の読み取りトークンを作る
+### 1. GitHub の読み取りトークン（public リポジトリでは不要）
 
-リポジトリが private なので、読み取り専用のトークンが必要です。
-（リポジトリを public にする場合、この手順は丸ごと不要です）
+このリポジトリが **public なら、この手順は不要です**。GitHub Contents API は
+公開リポジトリなら認証なしで読めるので、`GITHUB_TOKEN` は空のままにしてください。
+資格情報が1つも要らないので、期限切れで同期が止まる心配もありません。
+
+private に戻す場合のみ、読み取り専用トークンを用意します。
 
 1. GitHub の Settings > Developer settings > **Personal access tokens > Fine-grained tokens**
 2. **Generate new token**
@@ -38,6 +41,10 @@ Drive全体へのアクセス権は要求しません。
      （他の権限は付けないこと）
    - Expiration: 運用に合わせて設定（期限切れで同期が止まるので、更新日をカレンダーに入れておく）
 3. 生成されたトークンを控える
+
+> 認証なしのGitHub APIはIPあたり60回/時の制限があります。1日1回の同期では
+> まったく問題になりませんが、手動実行を繰り返して制限に当たった場合は
+> 1時間待つか、上記のトークンを設定してください。
 
 ### 2. スクリプトを貼る
 
@@ -62,7 +69,7 @@ Apps Script エディタの左メニュー **プロジェクトの設定** > **�
 | --- | --- |
 | `GITHUB_REPO` | `MasanoriKatsuragawa/Tobacco-prices` |
 | `GITHUB_REF` | 取り込むブランチ名（通常は `main`） |
-| `GITHUB_TOKEN` | 手順1のトークン（public リポジトリなら不要） |
+| `GITHUB_TOKEN` | **public リポジトリなら設定しない**。private の場合のみ手順1のトークン |
 
 > `LAST_SYNCED_SHA` はスクリプトが自動で書き込みます。手動で設定しないでください。
 
