@@ -2411,11 +2411,20 @@
       "recordCount": 4,
       "fetchedAt": "2026-09-08T08:29:44+09:00",
       "parsedAt": "2026-09-08T08:29:44+09:00"
+    },
+    "f7bec062bfff": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260907_kouriteika.pdf",
+      "etag": "\"8df2-65aef1a86f640\"",
+      "lastModified": "Tue, 08 Sep 2026 02:00:49 GMT",
+      "sha256": "c21c4e5d29293f15517ae27c2b029db44266aa365c6276bb0b3c9357d31abb70",
+      "recordCount": 4,
+      "fetchedAt": "2026-09-09T08:23:32+09:00",
+      "parsedAt": "2026-09-09T08:23:32+09:00"
     }
   },
   "index": {
-    "etag": "\"11146-65adafb8dab80\"",
-    "lastModified": "Mon, 07 Sep 2026 02:00:30 GMT"
+    "etag": "\"111f3-65aef19097e00\"",
+    "lastModified": "Tue, 08 Sep 2026 02:00:24 GMT"
   },
-  "lastRunAt": "2026-09-08T08:29:44+09:00"
+  "lastRunAt": "2026-09-09T08:23:32+09:00"
 }
