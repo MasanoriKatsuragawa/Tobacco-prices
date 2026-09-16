@@ -19,6 +19,78 @@ export function normalizeSpace(input: string): string {
   return toHalfWidth(input).replace(/\s+/g, " ").trim();
 }
 
+/** 半角カナ → 全角カナの対応表。 */
+const HANKAKU_KANA: Record<string, string> = {
+  "｡": "。", "｢": "「", "｣": "」", "､": "、", "･": "・", "ｰ": "ー",
+  "ｱ": "ア", "ｲ": "イ", "ｳ": "ウ", "ｴ": "エ", "ｵ": "オ",
+  "ｶ": "カ", "ｷ": "キ", "ｸ": "ク", "ｹ": "ケ", "ｺ": "コ",
+  "ｻ": "サ", "ｼ": "シ", "ｽ": "ス", "ｾ": "セ", "ｿ": "ソ",
+  "ﾀ": "タ", "ﾁ": "チ", "ﾂ": "ツ", "ﾃ": "テ", "ﾄ": "ト",
+  "ﾅ": "ナ", "ﾆ": "ニ", "ﾇ": "ヌ", "ﾈ": "ネ", "ﾉ": "ノ",
+  "ﾊ": "ハ", "ﾋ": "ヒ", "ﾌ": "フ", "ﾍ": "ヘ", "ﾎ": "ホ",
+  "ﾏ": "マ", "ﾐ": "ミ", "ﾑ": "ム", "ﾒ": "メ", "ﾓ": "モ",
+  "ﾔ": "ヤ", "ﾕ": "ユ", "ﾖ": "ヨ",
+  "ﾗ": "ラ", "ﾘ": "リ", "ﾙ": "ル", "ﾚ": "レ", "ﾛ": "ロ",
+  "ﾜ": "ワ", "ｦ": "ヲ", "ﾝ": "ン",
+  "ｧ": "ァ", "ｨ": "ィ", "ｩ": "ゥ", "ｪ": "ェ", "ｫ": "ォ",
+  "ｬ": "ャ", "ｭ": "ュ", "ｮ": "ョ", "ｯ": "ッ",
+};
+
+const DAKUTEN: Record<string, string> = {
+  カ: "ガ", キ: "ギ", ク: "グ", ケ: "ゲ", コ: "ゴ",
+  サ: "ザ", シ: "ジ", ス: "ズ", セ: "ゼ", ソ: "ゾ",
+  タ: "ダ", チ: "ヂ", ツ: "ヅ", テ: "デ", ト: "ド",
+  ハ: "バ", ヒ: "ビ", フ: "ブ", ヘ: "ベ", ホ: "ボ",
+  ウ: "ヴ",
+};
+const HANDAKUTEN: Record<string, string> = { ハ: "パ", ヒ: "ピ", フ: "プ", ヘ: "ペ", ホ: "ポ" };
+
+/**
+ * 半角カナを全角カナに直す。濁点・半濁点は前の文字に合成する。
+ *
+ * 財務省の認可PDFは銘柄名がほぼ全て半角カナ（例: ﾃﾘｱ ･ﾊﾟｰﾌﾟﾙ）なので、
+ * これを通さないと「ﾃﾘｱ」と「テリア」が別物として扱われてしまう。
+ */
+export function toFullWidthKana(input: string): string {
+  let out = "";
+  for (let i = 0; i < input.length; i++) {
+    const base = HANKAKU_KANA[input[i]] ?? input[i];
+    const next = input[i + 1];
+    if (next === "ﾞ" && DAKUTEN[base]) {
+      out += DAKUTEN[base];
+      i++;
+    } else if (next === "ﾟ" && HANDAKUTEN[base]) {
+      out += HANDAKUTEN[base];
+      i++;
+    } else {
+      out += base;
+    }
+  }
+  return out;
+}
+
+/**
+ * 認可PDFの表で使われる和暦の省略形「8.9.19」を ISO 日付にする。
+ *
+ * 元号が省略されているので、同じ文書の認可年月日から元号を引き継ぐ。
+ * 「40.0g」のような内容量と取り違えないよう、3つ組であることを必須にする。
+ */
+export function parseCompactWarekiDate(input: string, eraBaseIso: string): string | null {
+  const s = toHalfWidth(input);
+  const m = s.match(/(?:^|[\s(（])(\d{1,2})\.(\d{1,2})\.(\d{1,2})(?=[\s)）]|$)/);
+  if (!m) return null;
+
+  const era = ERAS.find((e) => {
+    const iso = eraBaseIso.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+    if (!iso) return false;
+    const value = Number(iso[1]) * 10000 + Number(iso[2]) * 100 + Number(iso[3]);
+    return value >= e.startYear * 10000 + e.startMonth * 100 + e.startDay;
+  });
+  if (!era) return null;
+
+  return isoDate(era.startYear + Number(m[1]) - 1, Number(m[2]), Number(m[3]));
+}
+
 /**
  * 「令和8年7月30日」「令和元年5月1日」「2026年7月30日」「2026/7/30」を ISO 日付にする。
  * 見つからなければ null。

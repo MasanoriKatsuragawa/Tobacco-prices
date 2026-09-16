@@ -60,7 +60,7 @@ export function extractApprovals(html: string, baseUrl: string): Approval[] {
       title: stripFileSize(title),
       approvalDate,
       approvalDateWareki: approvalDate ? toWareki(approvalDate) : "",
-      approvalType: detectApprovalType(haystack),
+      approvalType: detectApprovalType(linkText, absolute, contextText),
       order: approvals.length,
     });
   }
@@ -68,12 +68,33 @@ export function extractApprovals(html: string, baseUrl: string): Approval[] {
   return approvals;
 }
 
-/** 「変更認可」を「認可」より先に判定する。 */
-export function detectApprovalType(text: string): string {
+/**
+ * 認可 / 変更認可 を判定する。
+ *
+ * 判定の順番が重要。財務省のページは同じ日付の「認可」と「変更認可」が
+ * 同じ行（li / tr）に並ぶため、周辺テキストを見ると常に「変更認可」が
+ * 先にヒットして全件が変更認可になってしまう。
+ * そこで、そのリンク自身を指す情報 ── リンク文言 → ファイル名 ── を優先し、
+ * どちらでも決まらないときだけ周辺テキストに落とす。
+ */
+export function detectApprovalType(linkText: string, pdfUrl = "", contextText = ""): string {
+  const fromLink = classifyApprovalText(linkText);
+  if (fromLink) return fromLink;
+
+  // 例: 20260827_kouriteikahenkou.pdf（変更認可） / 20260827_kouriteika.pdf（認可）
+  const fileName = pdfUrl.split("/").pop()?.toLowerCase() ?? "";
+  if (/henkou|henko/.test(fileName)) return "変更認可";
+  if (/torikeshi|torikesi/.test(fileName)) return "取消";
+  if (/kouriteika|kouriteika/.test(fileName)) return "認可";
+
+  return classifyApprovalText(contextText) ?? "不明";
+}
+
+function classifyApprovalText(text: string): string | null {
   if (/変更\s*認可/.test(text)) return "変更認可";
   if (/取消/.test(text)) return "取消";
   if (/認可/.test(text)) return "認可";
-  return "不明";
+  return null;
 }
 
 /** 「（PDF:123KB）」のようなファイルサイズ表記を落とす。 */
