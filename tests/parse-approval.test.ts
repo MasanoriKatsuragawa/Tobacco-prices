@@ -24,7 +24,7 @@ function line(y: number, cells: [number, number, string][]): Line {
 }
 
 function page(lines: Line[]): Page {
-  return { pageNumber: 1, width: 595, height: 842, lines };
+  return { pageNumber: 1, width: 595, height: 842, mojibake: false, lines };
 }
 
 describe("parseApprovalPdf", () => {

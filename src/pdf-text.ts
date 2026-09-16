@@ -1,5 +1,6 @@
 import { createRequire } from "node:module";
 import path from "node:path";
+import { decodeIfMojibake } from "./mojibake.js";
 
 /**
  * PDFから座標付きテキストを取り出し、行（同じ高さのまとまり）に組み直す。
@@ -28,6 +29,8 @@ export type Page = {
   pageNumber: number;
   width: number;
   height: number;
+  /** このPDFがグリフ番号の生出力（文字化け）で、復号を通したか */
+  mojibake: boolean;
   lines: Line[];
 };
 
@@ -62,7 +65,9 @@ export async function extractPages(pdf: Buffer): Promise<Page[]> {
     verbosity: 0,
   }).promise;
 
-  const pages: Page[] = [];
+  // 文字化けの判定は文書単位で行う。ページごとだと判定がぶれるため、
+  // いったん全ページのセルを集めてから、まとめて復号する。
+  const rawPages: { pageNumber: number; width: number; height: number; cells: RawCell[] }[] = [];
 
   try {
     for (let pageNumber = 1; pageNumber <= doc.numPages; pageNumber++) {
@@ -71,7 +76,7 @@ export async function extractPages(pdf: Buffer): Promise<Page[]> {
         const viewport = page.getViewport({ scale: 1 });
         const content = await page.getTextContent();
 
-        const cells: (Cell & { y: number; height: number })[] = [];
+        const cells: RawCell[] = [];
         for (const item of content.items) {
           if (!("str" in item)) continue;
           const text = item.str;
@@ -85,12 +90,7 @@ export async function extractPages(pdf: Buffer): Promise<Page[]> {
           });
         }
 
-        pages.push({
-          pageNumber,
-          width: viewport.width,
-          height: viewport.height,
-          lines: groupIntoLines(cells),
-        });
+        rawPages.push({ pageNumber, width: viewport.width, height: viewport.height, cells });
       } finally {
         page.cleanup();
       }
@@ -99,8 +99,27 @@ export async function extractPages(pdf: Buffer): Promise<Page[]> {
     await doc.destroy();
   }
 
-  return pages;
+  const decoded = decodeIfMojibake(rawPages.flatMap((p) => p.cells.map((c) => c.text)));
+  const mojibake = decoded.mojibake;
+
+  // 復号結果を元のセルへ戻す（ページをまたいで通し番号で対応させる）
+  let cursor = 0;
+  return rawPages.map((page) => {
+    const cells = page.cells
+      .map((c) => ({ ...c, text: decoded.texts[cursor++].trim() }))
+      .filter((c) => c.text.length > 0);
+
+    return {
+      pageNumber: page.pageNumber,
+      width: page.width,
+      height: page.height,
+      mojibake,
+      lines: groupIntoLines(cells),
+    };
+  });
 }
+
+type RawCell = Cell & { y: number; height: number };
 
 /** y座標が近いテキスト片を1行にまとめる。 */
 export function groupIntoLines(

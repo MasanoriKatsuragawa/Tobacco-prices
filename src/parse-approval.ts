@@ -1,7 +1,15 @@
 import { createHash } from "node:crypto";
 import type { Approval } from "./index-page.js";
 import type { Line, Page } from "./pdf-text.js";
-import { normalizeSpace, parseJapaneseDate, parseNumber, toHalfWidth, toWareki } from "./wareki.js";
+import {
+  normalizeSpace,
+  parseCompactWarekiDate,
+  parseJapaneseDate,
+  parseNumber,
+  toFullWidthKana,
+  toHalfWidth,
+  toWareki,
+} from "./wareki.js";
 
 export type PriceRecord = {
   id: string;
@@ -93,8 +101,9 @@ export function parseApprovalPdf(approval: Approval, pages: Page[]): ParseResult
       }
 
       const quantity = parsed.quantity ?? extractQuantity(parsed.brand);
-      const effectiveDate =
-        parsed.effectiveDate ?? documentEffectiveDate ?? "";
+      // 表の実施日は「8.9.19」という和暦の省略形。元号は認可年月日から引き継ぐ。
+      const compactDate = approvalDate ? parseCompactWarekiDate(text, approvalDate) : null;
+      const effectiveDate = parsed.effectiveDate ?? compactDate ?? documentEffectiveDate ?? "";
 
       records.push({
         id: recordId(approval.pdfUrl, page.pageNumber, brand, parsed.price, quantity.value),
@@ -223,14 +232,27 @@ function nearestColumn(columns: Column[], center: number): Column | null {
 /**
  * ヘッダが取れなかったPDF向けのフォールバック。
  * 「銘柄名 … 20本 … 600円 … 令和8年8月1日」のような1行から拾う。
+ *
+ * 変更認可の表は「現行小売定価」「変更後小売定価」の順に2つ並ぶ。
+ * 認可されたのは後者なので、2つあるときは **2つ目** を小売定価として採り、
+ * 1つ目を改定前定価に回す。ここを取り違えると、値上げ前の古い価格を
+ * 「認可された定価」として公開してしまう。
  */
 export function parseHeuristically(text: string): ReturnType<typeof parseByColumns> {
   const flat = toHalfWidth(text);
-  const price = plausiblePrice(
-    parseNumber(flat.match(/([\d,]+)\s*円/)?.[1] ?? "") ??
-      parseNumber(flat.match(/([\d,]{2,7})\s*$/)?.[1] ?? ""),
-  );
-  if (price === null) return null;
+
+  const prices = [...flat.matchAll(/([\d,]+)\s*円/g)]
+    .map((m) => plausiblePrice(parseNumber(m[1])))
+    .filter((p): p is number => p !== null);
+
+  if (prices.length === 0) {
+    const trailing = plausiblePrice(parseNumber(flat.match(/([\d,]{2,7})\s*$/)?.[1] ?? ""));
+    if (trailing === null) return null;
+    prices.push(trailing);
+  }
+
+  const price = prices[prices.length - 1];
+  const priceBefore = prices.length >= 2 ? prices[prices.length - 2] : null;
 
   const effectiveDate = parseJapaneseDate(flat);
   const quantity = extractQuantity(flat);
@@ -250,7 +272,7 @@ export function parseHeuristically(text: string): ReturnType<typeof parseByColum
     brand,
     quantity,
     price,
-    priceBefore: null,
+    priceBefore,
     effectiveDate,
     maker: "",
     note: "",
@@ -296,7 +318,8 @@ function cleanBrand(raw: string): string {
 
 /** 表記ゆれを吸収した突き合わせ用キー。全角半角・空白・中黒を潰す。 */
 export function normalizeBrand(brand: string): string {
-  return toHalfWidth(brand)
+  // 認可PDFの銘柄はほぼ全て半角カナ。全角に寄せないと「ﾃﾘｱ」と「テリア」が別物になる。
+  return toFullWidthKana(toHalfWidth(brand))
     .replace(/[・･]/g, "")
     .replace(/\s+/g, "")
     .replace(/[「」『』]/g, "")

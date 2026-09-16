@@ -1,5 +1,12 @@
 import { describe, expect, it } from "vitest";
-import { parseJapaneseDate, parseNumber, toHalfWidth, toWareki } from "../src/wareki.js";
+import {
+  parseCompactWarekiDate,
+  parseJapaneseDate,
+  parseNumber,
+  toFullWidthKana,
+  toHalfWidth,
+  toWareki,
+} from "../src/wareki.js";
 
 describe("parseJapaneseDate", () => {
   it("令和を西暦に変換する", () => {
@@ -60,5 +67,43 @@ describe("parseNumber", () => {
 describe("toHalfWidth", () => {
   it("全角英数と全角スペースを半角にする", () => {
     expect(toHalfWidth("ＡＢＣ１２３　")).toBe("ABC123 ");
+  });
+});
+
+describe("parseCompactWarekiDate", () => {
+  it("表中の「8.9.19」を認可日の元号で解釈する", () => {
+    expect(parseCompactWarekiDate("ﾃﾘｱ 620円 640円 8.9.19", "2026-08-26")).toBe("2026-09-19");
+    expect(parseCompactWarekiDate("8.10.1", "2026-08-26")).toBe("2026-10-01");
+  });
+
+  it("内容量「40.0g」を日付と取り違えない", () => {
+    expect(parseCompactWarekiDate("パイプたばこ NASH 40.0g箱 2,300円", "2026-08-27")).toBeNull();
+    expect(parseCompactWarekiDate("152mm 1本", "2026-08-27")).toBeNull();
+  });
+
+  it("元号をまたぐと年が変わる", () => {
+    // 平成31年の認可なら「31.4.30」は平成31年4月30日
+    expect(parseCompactWarekiDate("31.4.30", "2019-04-01")).toBe("2019-04-30");
+  });
+
+  it("ありえない月日は null", () => {
+    expect(parseCompactWarekiDate("8.13.1", "2026-08-26")).toBeNull();
+  });
+});
+
+describe("toFullWidthKana", () => {
+  it("半角カナを全角にする", () => {
+    expect(toFullWidthKana("ﾃﾘｱ")).toBe("テリア");
+    expect(toFullWidthKana("ﾒﾃﾞｨｱ･ｺﾛﾅ")).toBe("メディア・コロナ");
+  });
+
+  it("濁点・半濁点を合成する", () => {
+    expect(toFullWidthKana("ﾊﾟｰﾌﾟﾙ")).toBe("パープル");
+    expect(toFullWidthKana("ﾌﾞﾗｯｸ")).toBe("ブラック");
+    expect(toFullWidthKana("ｷﾞﾘｼｬ")).toBe("ギリシャ");
+  });
+
+  it("カナ以外はそのまま", () => {
+    expect(toFullWidthKana("APPLE PUNCH 7,700円")).toBe("APPLE PUNCH 7,700円");
   });
 });

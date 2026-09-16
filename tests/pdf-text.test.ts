@@ -45,7 +45,7 @@ describe("groupIntoLines", () => {
 
 describe("looksLikeScannedPdf", () => {
   it("テキストがほぼ無いページを画像PDFとみなす", () => {
-    expect(looksLikeScannedPdf([{ pageNumber: 1, width: 595, height: 842, lines: [] }])).toBe(true);
+    expect(looksLikeScannedPdf([{ pageNumber: 1, width: 595, height: 842, mojibake: false, lines: [] }])).toBe(true);
   });
 
   it("十分なテキストがあれば false", () => {
@@ -54,6 +54,6 @@ describe("looksLikeScannedPdf", () => {
       cells: [],
       text: "メビウス 20本 600円 令和8年8月1日",
     }));
-    expect(looksLikeScannedPdf([{ pageNumber: 1, width: 595, height: 842, lines }])).toBe(false);
+    expect(looksLikeScannedPdf([{ pageNumber: 1, width: 595, height: 842, mojibake: false, lines }])).toBe(false);
   });
 });
