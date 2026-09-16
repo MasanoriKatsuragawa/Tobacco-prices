@@ -12,7 +12,8 @@
     "inspect": "tsx src/cli.ts inspect",
     "update": "tsx src/cli.ts update",
     "test": "vitest run",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "dump-lines": "tsx src/cli.ts dump-lines"
   },
   "dependencies": {
     "google-auth-library": "^10.4.0",

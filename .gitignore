@@ -1,3 +1,4 @@
 # ダウンロードしたPDFのキャッシュ（CIでは actions/cache が持つ）
 .cache/
 node_modules/
+debug/

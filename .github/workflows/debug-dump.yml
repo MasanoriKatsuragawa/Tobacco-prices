@@ -1,0 +1,51 @@
+# 開発用: キャッシュ済みPDFから生の行データを取り出し、debug ブランチへ置く。
+# 財務省サイトへは一切アクセスしない（既存のPDFキャッシュだけを読む）。
+name: 行データのダンプ（開発用）
+
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "ダンプするPDFの件数上限"
+        type: string
+        default: "1000"
+
+jobs:
+  dump:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: package-lock.json
+
+      - run: npm ci
+
+      # update ジョブが保存したPDFキャッシュを読むだけ。取得はしない。
+      - name: PDFキャッシュを復元
+        id: cache
+        uses: actions/cache/restore@v4
+        with:
+          path: .cache/pdf
+          key: tobacco-pdf-
+          restore-keys: tobacco-pdf-
+
+      - name: キャッシュの中身を確認
+        run: |
+          echo "キャッシュ内のPDF: $(find .cache/pdf -name '*.pdf' 2>/dev/null | wc -l) 件"
+
+      - run: npm run dump-lines -- --limit=${{ inputs.limit }}
+
+      - name: debug ブランチへ push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B debug/pdf-lines
+          git add -f debug/lines.json
+          git commit -m "開発用: PDFの生の行データをダンプ"
+          git push -f -u origin debug/pdf-lines

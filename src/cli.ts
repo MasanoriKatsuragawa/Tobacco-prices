@@ -6,6 +6,7 @@ import { fetchUrl } from "./http.js";
 import type { Approval } from "./index-page.js";
 import type { PriceRecord } from "./parse-approval.js";
 import { extractPages } from "./pdf-text.js";
+import { dumpLines } from "./dump-lines.js";
 import { crawlIndex, runUpdate } from "./pipeline.js";
 import { createClient, syncSpreadsheet } from "./sheets.js";
 
@@ -16,6 +17,7 @@ const USAGE = `
   sync              data/ の内容を Google スプレッドシートへ反映
   crawl             インデックスページの認可PDF一覧だけを更新
   inspect <対象>    PDFのURLまたはローカルパスを指定し、抽出されたテキスト行を表示
+  dump-lines        キャッシュ済みPDFの生の行データを debug/lines.json に書き出す（開発用）
 
 オプション:
   --full            既知のPDFも取り直して全件を再解析する
@@ -43,6 +45,9 @@ async function main(): Promise<void> {
       break;
     case "crawl":
       await commandCrawl();
+      break;
+    case "dump-lines":
+      await dumpLines(limit ?? 1000);
       break;
     case "inspect":
       await commandInspect(positional[0]);
