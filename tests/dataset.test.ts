@@ -8,15 +8,16 @@ function record(overrides: Partial<PriceRecord> = {}): PriceRecord {
     認可年月日: "2026-07-30",
     認可年月日_和暦: "令和8年7月30日",
     区分: "認可",
+    種別: "紙巻たばこ",
     銘柄: "メビウス",
     銘柄_正規化: "メビウス",
+    製品の区分: "20本",
     内容量: 20,
     単位: "本",
+    原産国: "日本",
     小売定価_円: 600,
     改定前定価_円: null,
     実施日: "2026-08-01",
-    製造者_輸入者: "日本たばこ産業株式会社",
-    備考: "",
     出典PDF: "https://www.mof.go.jp/a.pdf",
     出典ページ: 1,
     抽出精度: "高",
@@ -38,7 +39,7 @@ describe("toCsv", () => {
   });
 
   it("カンマ・引用符・改行を含む値を引用符で囲む", () => {
-    const csv = toCsv([record({ 備考: 'A,B "C"\n D' })]);
+    const csv = toCsv([record({ 原産国: 'A,B "C"\n D' })]);
     expect(csv).toContain('"A,B ""C""\n D"');
   });
 

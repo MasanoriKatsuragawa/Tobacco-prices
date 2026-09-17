@@ -87,15 +87,16 @@ export function decodeIfMojibake(texts: string[]): { mojibake: boolean; texts: s
 }
 
 /**
- * 復号できずに残った漢字・ひらがなを取り除く。
+ * 復号しきれずに残ったグリフ番号由来の文字を落とす。
  *
- * 化けた文書では漢字が意味のない文字として残るので、銘柄などに混ぜない。
- * ただし「1,900円」の「円」のように、数字の直後に来る1文字は単位とみなして
- * 呼び出し側が扱えるよう、除去は呼び出し側の判断に任せる。
+ * 化けたフォントの文字がどの範囲に現れるかはフォント次第で、除外する範囲を
+ * 数え上げても追いつかない（シンハラ・ラオ・バリ・カナダ先住民文字・
+ * ジョージア語補助…と際限がない）。そこで逆に、たばこの定価表に出てよい文字
+ * だけを通す。英数記号・かな・漢字・全角半角フォーム・ラテン補助で足りる。
  */
-export function stripUndecodable(text: string): string {
-  return text
-    .replace(/[฀-໿ᬀ-᯿ -⯿　-㏿㐀-鿿豈-﫿]/g, " ")
-    .replace(/\s+/g, " ")
-    .trim();
+const ALLOWED_CHARS =
+  /[^\u0020-\u007e\u00a0-\u024f\u3000-\u3006\u3008-\u303f\u3040-\u30ff\u4e00-\u9fff\uff00-\uffef]/g;
+
+export function stripGarbledScripts(text: string): string {
+  return text.replace(ALLOWED_CHARS, " ").replace(/\s+/g, " ").trim();
 }

@@ -1,5 +1,10 @@
 import { describe, expect, it } from "vitest";
-import { decodeIfMojibake, decodeMojibake, looksMojibake } from "../src/mojibake.js";
+import {
+  decodeIfMojibake,
+  decodeMojibake,
+  looksMojibake,
+  stripGarbledScripts,
+} from "../src/mojibake.js";
 
 /**
  * 実際の認可PDF（20260626_kouriteikahenkou.pdf など）から取り出した生の文字列。
@@ -66,5 +71,24 @@ describe("decodeIfMojibake", () => {
     const result = decodeIfMojibake(clean);
     expect(result.mojibake).toBe(false);
     expect(result.texts).toEqual(clean);
+  });
+});
+
+describe("stripGarbledScripts", () => {
+  it("復号できなかったグリフ由来の文字を落とす", () => {
+    expect(stripGarbledScripts("ࡇࡤࡓⴥᕳ ﾀﾞﾋﾞﾄﾞﾌ")).toBe("ﾀﾞﾋﾞﾄﾞﾌ");
+    expect(stripGarbledScripts("〇㐀 BIN Mini Cigar")).toBe("BIN Mini Cigar");
+  });
+
+  it("本物の漢字・かなは絶対に消さない", () => {
+    expect(stripGarbledScripts("大韓民国")).toBe("大韓民国");
+    expect(stripGarbledScripts("加熱式たばこ")).toBe("加熱式たばこ");
+    expect(stripGarbledScripts("葉巻たばこ")).toBe("葉巻たばこ");
+  });
+
+  it("半角カナ・英数・記号はそのまま通す", () => {
+    expect(stripGarbledScripts("ﾃﾘｱ ･ﾊﾟｰﾌﾟﾙ")).toBe("ﾃﾘｱ ･ﾊﾟｰﾌﾟﾙ");
+    expect(stripGarbledScripts("F45 20ｽﾃｨｯｸ")).toBe("F45 20ｽﾃｨｯｸ");
+    expect(stripGarbledScripts("1,900円")).toBe("1,900円");
   });
 });
