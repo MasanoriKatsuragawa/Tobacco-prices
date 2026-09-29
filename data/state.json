@@ -2465,11 +2465,20 @@
       "recordCount": 1,
       "fetchedAt": "2026-09-18T08:33:36+09:00",
       "parsedAt": "2026-09-18T08:33:36+09:00"
+    },
+    "423283d17ff0": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20260925_kouriteikahenkou.pdf",
+      "etag": "\"8f40-65c816e388b80\"",
+      "lastModified": "Mon, 28 Sep 2026 02:00:30 GMT",
+      "sha256": "cf9bd0a3a1fe25cbb1e46e099fd3a1c6d7949aa96e1a0e33430d16c4c94d1104",
+      "recordCount": 3,
+      "fetchedAt": "2026-09-29T09:59:18+09:00",
+      "parsedAt": "2026-09-29T09:59:18+09:00"
     }
   },
   "index": {
-    "etag": "\"1156f-65ba4259bde00\"",
-    "lastModified": "Thu, 17 Sep 2026 02:00:24 GMT"
+    "etag": "\"11629-65c816e294940\"",
+    "lastModified": "Mon, 28 Sep 2026 02:00:29 GMT"
   },
-  "lastRunAt": "2026-09-28T08:48:04+09:00"
+  "lastRunAt": "2026-09-29T09:59:18+09:00"
 }
