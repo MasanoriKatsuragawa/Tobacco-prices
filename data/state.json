@@ -2528,11 +2528,29 @@
       "recordCount": 1,
       "fetchedAt": "2026-10-08T10:00:50+09:00",
       "parsedAt": "2026-10-08T10:00:50+09:00"
+    },
+    "859a27b33e0d": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20261007_kouriteikahenkou.pdf",
+      "etag": "\"a381-65d4a98a24b80\"",
+      "lastModified": "Thu, 08 Oct 2026 02:00:30 GMT",
+      "sha256": "8d23aab57ccc188952b25712f9758ebe5dce0ac10ebde565a97839843133eb78",
+      "recordCount": 5,
+      "fetchedAt": "2026-10-09T10:13:25+09:00",
+      "parsedAt": "2026-10-09T10:13:25+09:00"
+    },
+    "9ffdab6e1527": {
+      "url": "https://www.mof.go.jp/policy/tab_salt/topics/20261007_kouriteika.pdf",
+      "etag": "\"921d-65d4a98930940\"",
+      "lastModified": "Thu, 08 Oct 2026 02:00:29 GMT",
+      "sha256": "cc8ad08eefdcb5711dbe54e000b4e7e0ce32d6a0adefdd40e2650b8e9f2e9692",
+      "recordCount": 55,
+      "fetchedAt": "2026-10-09T10:13:26+09:00",
+      "parsedAt": "2026-10-09T10:13:26+09:00"
     }
   },
   "index": {
-    "etag": "\"11a49-65d37527b68be\"",
-    "lastModified": "Wed, 07 Oct 2026 03:00:48 GMT"
+    "etag": "\"11bb1-65d4a98930940\"",
+    "lastModified": "Thu, 08 Oct 2026 02:00:29 GMT"
   },
-  "lastRunAt": "2026-10-08T10:00:50+09:00"
+  "lastRunAt": "2026-10-09T10:13:26+09:00"
 }
