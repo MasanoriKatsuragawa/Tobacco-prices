@@ -115,81 +115,14 @@ curl -LO https://raw.githubusercontent.com/MasanoriKatsuragawa/Tobacco-prices/ma
 別のシートを使う場合は、Googleドライブで空のスプレッドシートを作り、
 URL の `https://docs.google.com/spreadsheets/d/`**`<ここがID>`**`/edit` からIDを控えてください。
 
-### 4.2 シートへの書き込み方式を選ぶ
-
-**サービスアカウントの鍵JSONは、多くの組織でポリシーにより作成が禁止されています**
-（`constraints/iam.disableServiceAccountKeyCreation`）。長期間有効な認証情報がファイルとして
-出回るのを避けるためで、禁止されているなら鍵を使わない方式を選んでください。
-
-| 方式 | Google Cloud | 長期の資格情報 | 向いている場合 |
-| --- | --- | --- | --- |
-| **A. Apps Script**（既定） | 不要 | Googleの資格情報なし | GCPを使えない／使いたくない。**まずこれを試す** |
-| B. Workload Identity 連携 | 必要 | なし（OIDC） | GCPを使えて、Actions側で完結させたい |
-| C. サービスアカウント鍵 | 必要 | 鍵JSON | 上2つが使えない場合の最終手段 |
-
-#### A. Apps Script 方式（Google Cloud 不要・既定）
-
-スプレッドシート側に置いたスクリプトが、1日1回GitHubからCSVを取りに来ます。
-**Googleの認証情報を1つも作りません**（スクリプトはシート所有者の権限で動くため）。
-GitHub Actions 側にGoogle関連のSecretは不要です。
-
-手順は [`apps-script/README.md`](apps-script/README.md) を参照してください。
-
-#### B. Workload Identity 連携（鍵なし）
-
-GitHub Actions の OIDC トークンでサービスアカウントを借用します。鍵ファイルは作りません。
-
-1. Google Cloud で **Sheets API** を有効化し、サービスアカウントを1つ作る（鍵は作らない）。
-2. Workload Identity プールとプロバイダを作り、GitHubのOIDC発行者を登録する。
-3. そのサービスアカウントに、GitHubのプリンシパルから
-   `roles/iam.workloadIdentityUser` を付与する。
-4. 4.1 のスプレッドシートを、サービスアカウントのメールアドレス
-   （`...@....iam.gserviceaccount.com`）に**編集者**として共有する。
-5. ワークフローの認証ステップを有効にする（`.github/workflows/update.yml` の
-   「Google認証（Workload Identity 連携）」のコメントを参照）。
-6. Secrets に `GCP_WORKLOAD_IDENTITY_PROVIDER` と `GCP_SERVICE_ACCOUNT` を登録する。
-
-`sync` は鍵が無ければ ADC（Application Default Credentials）を自動で使うので、
-コード側の変更は要りません。
-
-#### C. サービスアカウント鍵（組織で禁止されていない場合のみ）
-
-1. Google Cloud で **Sheets API** を有効化し、サービスアカウントを作ってJSON鍵を発行する。
-2. 4.1 のスプレッドシートを、そのアドレスに**編集者**として共有する。
-3. Secrets に `GOOGLE_SERVICE_ACCOUNT_JSON` として鍵の中身を登録する（base64でも可）。
-
-### 4.3 一般公開の設定
+### 4.2 一般公開の設定
 
 スプレッドシートの「共有」から:
 
 - 「一般的なアクセス」を **リンクを知っている全員** ＋ 権限は **閲覧者**
 - 「ファイル > 共有 > ウェブに公開」でも公開でき、こちらは埋め込み用URLやCSV/TSV形式での配布ができます。
 
-> 共有相手の権限を「編集者」にしないこと。編集権限を持つのは同期を行う1主体だけにします。
-> A方式ではそれがあなた自身なので、追加で編集者を作る必要はありません。
-
-### 4.4 GitHub Secrets
-
-リポジトリの Settings > Secrets and variables > Actions に登録します。
-**A方式（Apps Script）を使う場合、ここでの登録は何も要りません。**
-
-| Secret | 必要な方式 | 値 |
-| --- | --- | --- |
-| `SPREADSHEET_ID` | B / C | 4.1 で控えたID |
-| `GCP_WORKLOAD_IDENTITY_PROVIDER` | B | `projects/…/locations/global/workloadIdentityPools/…/providers/…` |
-| `GCP_SERVICE_ACCOUNT` | B | 借用するサービスアカウントのメールアドレス |
-| `GOOGLE_SERVICE_ACCOUNT_JSON` | C | 鍵JSONの中身（base64でも可） |
-
-`SPREADSHEET_ID` が未設定の場合、ワークフローは取得・解析だけ行い、同期はスキップします。
-**A方式ではこれが正しい状態です**（書き込みはApps Script側の担当）。
-
-> A方式を使うのに `SPREADSHEET_ID` が登録されていると、同期ステップが
-> 「Googleの認証情報が見つかりません」で失敗します。B/C から A に戻すときは
-> **`SPREADSHEET_ID` を削除**してください。シートに編集者として追加した
-> サービスアカウントも不要になるので、共有から外して構いません
-> （A方式ではあなた自身の権限で書き込むため）。
-
-### 4.5 初回の全件取り込み
+### 4.3 初回の全件取り込み
 
 初回だけ過去分をまとめて取り込みます。
 
@@ -197,17 +130,7 @@ GitHub Actions の Actions タブで「たばこ小売定価データの更新�
 **Run workflow** の `full` にチェックを入れて実行してください。
 完了すると `data/` に結果がコミットされます。
 
-A方式の場合は、そのあとApps Scriptの `updateFromGitHub` を1度手動実行すればシートに反映されます。
-
-ローカルで動かす場合:
-
-```bash
-npm ci
-npm run update -- --full          # 全PDFを取得して解析（件数によっては数十分かかります）
-
-# B/C方式でシートまで書きたい場合のみ
-SPREADSHEET_ID=xxx npm run sync
-```
+そのあとApps Scriptの `updateFromGitHub` を1度手動実行すればシートに反映されます。
 
 ## 5. 自動更新の仕組み
 
