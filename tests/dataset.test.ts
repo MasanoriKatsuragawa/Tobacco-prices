@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { CSV_COLUMNS, datasetHash, mergeRecords, sortRecords, toCsv } from "../src/dataset.js";
+import { reconcileApprovalFields } from "../src/pipeline.js";
 import type { PriceRecord } from "../src/parse-approval.js";
 
 function record(overrides: Partial<PriceRecord> = {}): PriceRecord {
@@ -91,5 +92,52 @@ describe("datasetHash", () => {
 
   it("CSVに出ない列（原文）の違いは無視される", () => {
     expect(datasetHash([record()])).toBe(datasetHash([record({ 原文: "違う原文" })]));
+  });
+});
+
+describe("reconcileApprovalFields", () => {
+  const approvals = [
+    {
+      id: "a",
+      pdfUrl: "https://www.mof.go.jp/a.pdf",
+      title: "製造たばこ小売定価(令和8年7月30日認可)",
+      approvalDate: "2026-07-30",
+      approvalDateWareki: "令和8年7月30日",
+      approvalType: "認可",
+      order: 0,
+    },
+  ];
+
+  it("古い区分をインデックスの現在値に合わせる", () => {
+    const stale = record({ 区分: "変更認可", 出典PDF: "https://www.mof.go.jp/a.pdf" });
+    const [fixed] = reconcileApprovalFields([stale], approvals);
+    expect(fixed.区分).toBe("認可");
+  });
+
+  it("認可年月日と和暦も揃える", () => {
+    const stale = record({
+      認可年月日: "2025-01-01",
+      認可年月日_和暦: "令和7年1月1日",
+      出典PDF: "https://www.mof.go.jp/a.pdf",
+    });
+    const [fixed] = reconcileApprovalFields([stale], approvals);
+    expect(fixed.認可年月日).toBe("2026-07-30");
+    expect(fixed.認可年月日_和暦).toBe("令和8年7月30日");
+  });
+
+  it("一致していれば同じオブジェクトを返す（無駄な差分を出さない）", () => {
+    const current = record({
+      区分: "認可",
+      認可年月日: "2026-07-30",
+      出典PDF: "https://www.mof.go.jp/a.pdf",
+    });
+    const [same] = reconcileApprovalFields([current], approvals);
+    expect(same).toBe(current);
+  });
+
+  it("インデックスに無いPDFのレコードは触らない", () => {
+    const orphan = record({ 区分: "変更認可", 出典PDF: "https://www.mof.go.jp/zzz.pdf" });
+    const [same] = reconcileApprovalFields([orphan], approvals);
+    expect(same).toBe(orphan);
   });
 });

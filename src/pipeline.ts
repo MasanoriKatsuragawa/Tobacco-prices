@@ -16,7 +16,7 @@ import { decodeHtml, fetchUrl } from "./http.js";
 import { extractApprovals, type Approval } from "./index-page.js";
 import { parseApprovalPdf, type PriceRecord } from "./parse-approval.js";
 import { extractPages, looksLikeScannedPdf } from "./pdf-text.js";
-import { nowJst } from "./wareki.js";
+import { nowJst, toWareki } from "./wareki.js";
 
 export type UpdateOptions = {
   /** 既知のPDFも含めて全件を取り直して再解析する */
@@ -38,17 +38,16 @@ export type UpdateSummary = {
   changed: boolean;
 };
 
-/** インデックスページを取得して認可PDFの一覧を返す。 */
+/**
+ * インデックスページを取得して認可PDFの一覧を返す。
+ *
+ * ここでは条件付きGETを使わない。304 を受けて保存済みの approvals.json を
+ * 使い回すと、index-page.ts の判定を直してもページ側が変わるまで反映されず、
+ * 誤った区分が残り続ける（実際に区分の修正がこれで効かなかった）。
+ * 1日1回の小さなHTML取得なので、毎回読み直す。
+ */
 export async function crawlIndex(state: State): Promise<{ approvals: Approval[]; state: State }> {
-  const result = await fetchUrl(INDEX_URL, state.index);
-
-  if (result.notModified) {
-    const cached = await readJson<Approval[]>(PATHS.approvals, []);
-    if (cached.length > 0) {
-      console.log("インデックス: 更新なし（304）");
-      return { approvals: cached, state };
-    }
-  }
+  const result = await fetchUrl(INDEX_URL);
 
   const html = decodeHtml(result.body, result.contentType);
   const approvals = extractApprovals(html, INDEX_URL);
@@ -61,6 +60,39 @@ export async function crawlIndex(state: State): Promise<{ approvals: Approval[];
   }
 
   return { approvals, state: { ...state, index: result.meta } };
+}
+
+/**
+ * 既存レコードの「認可そのものに属する項目」を、インデックスの現在値に合わせる。
+ *
+ * 区分と認可年月日はPDFの中身ではなくインデックスページから決まるので、
+ * その判定を直したときは、PDFを取り直さなくても既存レコードへ反映できる。
+ * これが無いと、一度解析したPDFのレコードは古い判定のまま残り続ける。
+ */
+export function reconcileApprovalFields(records: PriceRecord[], approvals: Approval[]): PriceRecord[] {
+  const byUrl = new Map(approvals.map((a) => [a.pdfUrl, a]));
+  let changed = 0;
+
+  const updated = records.map((record) => {
+    const approval = byUrl.get(record.出典PDF);
+    if (!approval) return record;
+
+    const approvalDate = approval.approvalDate ?? record.認可年月日;
+    if (record.区分 === approval.approvalType && record.認可年月日 === approvalDate) return record;
+
+    changed++;
+    return {
+      ...record,
+      区分: approval.approvalType,
+      認可年月日: approvalDate,
+      認可年月日_和暦: approvalDate ? toWareki(approvalDate) : "",
+    };
+  });
+
+  if (changed > 0) {
+    console.log(`インデックスの現在値に合わせ、${changed} 件の区分・認可年月日を更新しました。`);
+  }
+  return updated;
 }
 
 /** 未取得・更新されたPDFだけをダウンロードしてキャッシュに置く。 */
@@ -189,7 +221,8 @@ export async function runUpdate(options: UpdateOptions = {}): Promise<UpdateSumm
     }
   }
 
-  const merged = mergeRecords(existingRecords, freshRecords);
+  // 区分・認可年月日はインデックス側で決まるので、PDFを取り直さずに追随させる
+  const merged = reconcileApprovalFields(mergeRecords(existingRecords, freshRecords), approvals);
   const allUnparsed = [...unparsedByPdf.values()].flat();
 
   summary.totalRecords = merged.length;
