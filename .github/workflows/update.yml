@@ -88,19 +88,6 @@ jobs:
         id: update
         run: npm run update -- ${{ inputs.full && '--full' || '' }}
 
-      # 鍵を作らずにGoogleへ認証する方式。GCP_WORKLOAD_IDENTITY_PROVIDER を
-      # 登録したときだけ動き、ADC（GOOGLE_APPLICATION_CREDENTIALS）を用意する。
-      - name: Google認証（Workload Identity 連携）
-        if: env.SPREADSHEET_ID != '' && env.GCP_WORKLOAD_IDENTITY_PROVIDER != ''
-        uses: google-github-actions/auth@v2
-        with:
-          workload_identity_provider: ${{ secrets.GCP_WORKLOAD_IDENTITY_PROVIDER }}
-          service_account: ${{ secrets.GCP_SERVICE_ACCOUNT }}
-
-      - name: スプレッドシートへ同期
-        if: env.SPREADSHEET_ID != ''
-        run: npm run sync -- ${{ inputs.force_sync && '--force' || '' }}
-
       - name: データの更新をコミット
         run: |
           if [ -z "$(git status --porcelain data)" ]; then
@@ -118,6 +105,19 @@ jobs:
             git pull --rebase
           done
           exit 1
+
+      # 鍵を作らずにGoogleへ認証する方式。GCP_WORKLOAD_IDENTITY_PROVIDER を
+      # 登録したときだけ動き、ADC（GOOGLE_APPLICATION_CREDENTIALS）を用意する。
+      - name: Google認証（Workload Identity 連携）
+        if: env.SPREADSHEET_ID != '' && env.GCP_WORKLOAD_IDENTITY_PROVIDER != ''
+        uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: ${{ secrets.GCP_WORKLOAD_IDENTITY_PROVIDER }}
+          service_account: ${{ secrets.GCP_SERVICE_ACCOUNT }}
+
+      - name: スプレッドシートへ同期
+        if: env.SPREADSHEET_ID != ''
+        run: npm run sync -- ${{ inputs.force_sync && '--force' || '' }}
 
       - name: 解析できなかった行をアーティファクトに残す
         if: always()
